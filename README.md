@@ -4,11 +4,11 @@ Coleccion de ejemplos en clase para el año 2020.
 
 # C
 
-folder `c/` con ejemplos unicamente de Lenguaje C.
+folder [c/](c/) con ejemplos unicamente de Lenguaje C.
 
 # Python
 
-Folder `python/` con ejemplos unicamente para lenguaje Python 3.
+Folder [python/](python/) con ejemplos unicamente para lenguaje Python 3.
 
 
 ## Dudas y preguntas:
