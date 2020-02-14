@@ -16,3 +16,9 @@ Folder `python/` con ejemplos unicamente para lenguaje Python 3.
 Para hacer una pregunta especifica proceder a abrir un [`Issue`](https://github.com/cs-ufm/cs101-2020/issues)
 
 Si tiene dudas de que es un [Issue por favor lea documentacion](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue)
+
+
+## Contacto
+
+Si desea contactarme favor enviar un correo a 
+[jcano@ufm.edu](mailto:jcano@ufm.edu?subject=[CS101-2020]%20Duda%20de%20Curso)
