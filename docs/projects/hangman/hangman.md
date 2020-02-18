@@ -1,4 +1,4 @@
-# Hangman
+# 1. Hangman
 
 Para este proyecto usted realizara un hangman (ahorcado) con algunos detalles propios.
 
