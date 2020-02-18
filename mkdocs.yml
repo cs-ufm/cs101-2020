@@ -10,4 +10,4 @@ nav:
   - Home: index.md
   - Projects:
       - Overview: projects/projects.md
-      - Hangman: projects/hangman/hangman.md
+      - 1. Hangman: projects/hangman/hangman.md
