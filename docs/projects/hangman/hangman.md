@@ -9,7 +9,8 @@ Se le brindara un proyecto con algunas "funciones" ya agregadas sobre las cuales
 En esencia su programa debera hacer lo siguiente:
 
 - tendra un Menu para que el usuario pueda jugar, detallado mas adelante.
-- dada un banco de palabras a adivinar, de longitud distinta
+- Este menu debera iterar indefinidamente hasta que el usuario solicite salir (2 maneras de salir, continue leyendo)
+- le proveeremos un banco de palabras a adivinar, de longitud distinta, usted puede modificar este banco de palabras.
 - seleccionara una palabra aleatoria de ese banco.
 - la palabra solamente se mostrara de esta manera: `"_ _ _ _ _"`  underscores dependiendo la cantidad de letras que tenga.
 - emepezara el juego y el usuario empezara a ingresar letras que cree que la palabra contiene
@@ -21,6 +22,7 @@ En esencia su programa debera hacer lo siguiente:
     - completar la palabra letra por letra o
     - ingresar la palabra directamente
     - presionar la combinacion `ctrl+c`
+- cada que se imprima o refresque la pantalla puede hacer un `clearscreen` o bien imprimir lineas a manera que se "refresque"
 
 ---
 # Menu
