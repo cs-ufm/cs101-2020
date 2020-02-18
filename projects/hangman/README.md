@@ -1,3 +1,0 @@
-# Hangman
-
-Usted realizara 
