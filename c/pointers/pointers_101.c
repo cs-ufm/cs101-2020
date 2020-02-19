@@ -10,12 +10,16 @@ int main(){
 
     ip = &i;
 
-    i= 100;
+    i= 10;
 
     k = *ip;
 
     k = k+2;
     i= *(&k);
 
-    *(&k)=200;
+    *(&k)=20;
+
+    printf("i: %d k: %i \n", i, k);
+
+    return 0;
 }
