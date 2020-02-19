@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// * USING POINTERS
 void doit( int *x ){
         *x = 5;
 }
