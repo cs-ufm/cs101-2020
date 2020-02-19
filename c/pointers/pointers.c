@@ -16,17 +16,24 @@ int main(){
     printf("Value: %i \nAddress: %p \n", var, &var) ;
 
     // ? Pointers are variables that store addresses instead of values.
-    int* point = &var;
+    int* pointer = &var;
 
     printf("\n######################################## \n Lets get started with Pointes\n######################################## \n\n");
-    printf("\nAddress of the pointer: %x\n", point) ;
+    printf("\nAddress of the pointer: %x\n", pointer) ;
 
-    printf("\nValue of the memory it points: %d\n", *point) ;
+    printf("\nValue of the memory it points: %d\n", *pointer) ;
 
     // change the value that it points
-    *point = 25;
-    printf("\nChanging value using pointers\n pointer: %d Var: %d\n", *point, var) ;
+    *pointer = 25;
+    printf("\nChanging value using pointers\n pointer: %d Var: %d\n", *pointer, var) ;
 
+
+    printf("\n\n\nValue of var via pointers %i\n", *(&var));// whic is the same as 'var'
+
+
+    printf("\n --- Print all info 'var'\n var: %d &var: %x \n", var, &var);
+
+    printf("\n --- Print all info 'pointer'\n pointer: %x &pointer: %x *pointer: %i \n", pointer, &pointer, *pointer);
 
 
 
