@@ -1,149 +1,528 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>1. Hangman - CS101</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "1. Hangman";
-    var mkdocs_page_input_path = "projects/hangman/hangman.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
 
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../../.." class="icon icon-home"> CS101</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
+    
+    
+      
+        <title>Instrucciones - Computer Science 101</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#hangman" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="Computer Science 101" class="md-header-nav__button md-logo">
+          
+            <img src="../../../img/logo.png" width="24" height="24">
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../../..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Projects</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../projects/">Overview</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">1. Hangman</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#hangman">Hangman</a></li>
-    
-
-    <li class="toctree-l3"><a href="#menu">Menu</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#ejemplo">Ejemplo</a></li>
-        
-        </ul>
-    
-
-    </ul>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
       </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../..">CS101</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../../..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Projects &raquo;</li>
-        
-      
-    
-    <li>1. Hangman</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Computer Science 101
+            </span>
+            <span class="md-header-nav__topic">
               
+                Instrucciones
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Computer Science 101" class="md-nav__button md-logo">
+      
+        <img src="../../../img/logo.png" width="48" height="48">
+      
+    </a>
+    Computer Science 101
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Projects
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../projects/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+    
+    <label class="md-nav__link" for="nav-2-2">
+      1. Hangman
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        1. Hangman
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../para_entregar/" title="Para Entregar" class="md-nav__link">
+      Para Entregar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Instrucciones
+      </label>
+    
+    <a href="./" title="Instrucciones" class="md-nav__link md-nav__link--active">
+      Instrucciones
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proyecto-base-para-empezar" class="md-nav__link">
+    Proyecto Base - Para empezar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-1" class="md-nav__link">
+    Fase 1
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu" class="md-nav__link">
+    Menu
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#empezar-juego" class="md-nav__link">
+    Empezar Juego
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ver-instrucciones" class="md-nav__link">
+    Ver Instrucciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salir" class="md-nav__link">
+    Salir
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-2" class="md-nav__link">
+    Fase 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-3" class="md-nav__link">
+    Fase 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    Ejemplo
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proyecto-base-para-empezar" class="md-nav__link">
+    Proyecto Base - Para empezar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-1" class="md-nav__link">
+    Fase 1
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu" class="md-nav__link">
+    Menu
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#empezar-juego" class="md-nav__link">
+    Empezar Juego
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ver-instrucciones" class="md-nav__link">
+    Ver Instrucciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salir" class="md-nav__link">
+    Salir
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-2" class="md-nav__link">
+    Fase 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-3" class="md-nav__link">
+    Fase 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    Ejemplo
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
                 <h1 id="hangman">Hangman</h1>
 <p>Para este proyecto usted realizara un hangman (ahorcado) con algunos detalles propios.</p>
-<p>Se le brindara un proyecto con algunas "funciones" ya agregadas sobre las cuales usted agregara logica, programacion y codigo propio.</p>
-<p>En esencia su programa debera hacer lo siguiente:</p>
+<p>Se le brindara un proyecto base con algunas "funciones" ya agregadas sobre las cuales usted agregara logica, programacion y codigo propio.</p>
+<p>El proyecto se divira en Modulos o Fase, a manera que usted pueda ir cubriendo fase por fase y hacer pequeños incrementos.</p>
+<h2 id="proyecto-base-para-empezar"><a href="https://github.com/cs-ufm/hangman">Proyecto Base</a> - Para empezar</h2>
+<p>Este es el <a href="https://github.com/cs-ufm/hangman">proyecto Base</a> que usted puede utilizar</p>
+<p>Asegurese de:</p>
 <ul>
-<li>tendra un Menu para que el usuario pueda jugar, detallado mas adelante.</li>
-<li>Este menu debera iterar indefinidamente hasta que el usuario solicite salir (2 maneras de salir, continue leyendo)</li>
-<li>le proveeremos un banco de palabras a adivinar, de longitud distinta, usted puede modificar este banco de palabras.</li>
-<li>seleccionara una palabra aleatoria de ese banco.</li>
-<li>la palabra solamente se mostrara de esta manera: <code>"_ _ _ _ _"</code>  underscores dependiendo la cantidad de letras que tenga.</li>
-<li>emepezara el juego y el usuario empezara a ingresar letras que cree que la palabra contiene</li>
-<li>el usuario tendra N (N debe ser una variable global que sea facil de cambiar, comenzara en 7) intentos antes que se ahorque (se acabe el juego)</li>
-<li>cada que se adivine una letra se "descubrira" esa letra las veces que aparezca esa letra dentro de la palabra.</li>
-<li>todo sera en modo consola o modo terminal</li>
-<li>no habra distincion de mayusculas o minusculas. (todo sera minusculas)</li>
-<li>el juego se puede terminar al:<ul>
-<li>completar la palabra letra por letra o</li>
-<li>ingresar la palabra directamente</li>
-<li>presionar la combinacion <code>ctrl+c</code></li>
-</ul>
-</li>
-<li>cada que se imprima o refresque la pantalla puede hacer un <code>clearscreen</code> o bien imprimir lineas a manera que se "refresque"</li>
+<li>[ ] Hacer FORK!</li>
+<li>[ ] Llenar las secciones necesarias del README.md</li>
 </ul>
 <hr />
-<h1 id="menu">Menu</h1>
+<h2 id="fase-1">Fase 1</h2>
+<ul>
+<li>tendra un Menu para que el usuario pueda jugar, detallado mas adelante.</li>
+<li>Este menu debera iterar indefinidamente hasta que el usuario solicite salir (2 maneras de salir, una de ellas se explica aqui 'opcion 4', para la segunda continue leyendo)</li>
+</ul>
+<h3 id="menu">Menu</h3>
+<p>Se debera pedir una opcion dentro de 4 opciones, si ingresa opcion '4' por ejemplo debera salir.</p>
 <pre><code>######### HANGMAN MENU #########
 
 1. Empezar Juego
@@ -158,12 +537,83 @@ Ingrese Opcion:
 <blockquote>
 <p><code>Por Favor sea creativo esto es solo un ejemplo del Menu, usted puede *agregar* (no quitar) opciones, puede utilizar otro formato mas bonito si desea</code></p>
 </blockquote>
+<h4 id="empezar-juego">Empezar Juego</h4>
+<p>Debera Pedir el nombre del jugador o el Usuario/Alias (Algo como: Fox, Rabbit) y en todo 
+momento del juego mostrar el nombre del jugador.</p>
+<blockquote>
+<p>al elegir opcion '1'</p>
+</blockquote>
+<h4 id="ver-instrucciones">Ver Instrucciones</h4>
+<p>Mostrara las instrucciones de como jugar el juego, es como un pequeno "help menu"</p>
+<blockquote>
+<p>al elegir opcion '2'</p>
+</blockquote>
+<h4 id="about">About</h4>
+<p>Mostrara informacion del alumno desarrollador, correo electronico y/o algo mas que usted desee mostrar.</p>
+<blockquote>
+<p>al elegir opcion '3'</p>
+</blockquote>
+<h4 id="salir">Salir</h4>
+<p>Saldra de la ejecucion del juego. <code>exit(0);</code></p>
+<blockquote>
+<p>al elegir opcion '4'</p>
+</blockquote>
+<hr />
+<h2 id="fase-2">Fase 2</h2>
+<ul>
+<li>le proveeremos un banco de palabras a adivinar, de longitud distinta, usted puede modificar este banco de palabras. Este banco de palabras no tendra palabras con numeros! aseguerese de no agregar una palabra con numeros</li>
+</ul>
+<pre><code class="c">const char *word_collection[MAX_WORDS]= {
+                    &quot;este&quot;,&quot;es&quot;,&quot;un&quot;,&quot;banco&quot;,&quot;de&quot;,
+                    &quot;palabras&quot;,&quot;sientase&quot;,&quot;en&quot;,&quot;libertad&quot;,
+                    &quot;de&quot;,&quot;agregar&quot;,&quot;la&quot;,&quot;cantidad&quot;,&quot;de&quot;,
+                    &quot;palabras&quot;,&quot;que&quot;,&quot;usted&quot;,&quot;desee&quot;,&quot;hasta&quot;,
+                    &quot;un&quot;,&quot;maximo&quot;,&quot;de&quot;,&quot;MAX_WORDS&quot;
+                    };
+</code></pre>
+
+<ul>
+<li>seleccionara una palabra aleatoria de ese banco. (esto ya esta hecho)</li>
+<li>la palabra seleccionada solamente se mostrara de esta manera: <code>"_ _ _ _ _"</code>  underscores dependiendo la cantidad de letras que tenga.</li>
+<li>emepezara el juego y el usuario empezara a ingresar letras que cree que la palabra contiene</li>
+<li>el usuario tendra N (N debe ser una variable global que sea facil de cambiar, comenzara en 7) intentos antes que se ahorque (se acabe el juego)</li>
+<li>cada que se adivine una letra se "descubrira" esa letra las veces que aparezca esa letra dentro de la palabra.</li>
+<li>todo sera en modo consola o modo terminal</li>
+<li>no habra distincion de mayusculas o minusculas. (todo sera minusculas)</li>
+</ul>
+<hr />
+<h2 id="fase-3">Fase 3</h2>
+<ul>
+<li>el juego se puede terminar al:<ul>
+<li>completar la palabra letra por letra o</li>
+<li>ingresar la palabra directamente</li>
+<li>presionar la letra <code>0</code> (numero cero) *</li>
+</ul>
+</li>
+<li>cada que se imprima o refresque la pantalla puede hacer un <code>clearscreen</code> o bien imprimir lineas a manera que se "refresque"</li>
+</ul>
+<blockquote>
+<ul>
+<li>por eso es indispensable que ninguna palabra contenga algun numero!</li>
+<li>puede alterar la combinacion para salir por un '0Q' o '0Z'</li>
+</ul>
+</blockquote>
+<pre><code class="c">//clearscreen
+#include &lt;stdlib.h&gt;
+
+void clearscreen()
+{
+    system(&quot;@cls||clear&quot;);
+}
+</code></pre>
+
 <hr />
 <h2 id="ejemplo">Ejemplo</h2>
 <p>Supongamos que se elige la palabra <code>'hola'</code></p>
 <hr />
-<h4 id="intento-1-se-ingresa-letra-a">Intento 1, se ingresa letra 'a'</h4>
+<p><strong> Intento 1, se ingresa letra 'a'</strong></p>
 <pre><code>
+Jugador: Marcos
 Intentos: 1/10
 Aciertos: 0
 Palabra:
@@ -175,8 +625,9 @@ Ingrese Letra/Palabra: a
 </code></pre>
 
 <hr />
-<h4 id="intento-2-se-ingresa-letra-b">Intento 2, se ingresa letra 'b'</h4>
+<p><strong>  Intento 2, se ingresa letra 'b' </strong> </p>
 <pre><code>
+Jugador: Marcos
 Intentos: 2/10
 Aciertos: 1
 Palabra:
@@ -188,8 +639,9 @@ Ingrese Letra/Palabra: b
 </code></pre>
 
 <hr />
-<h4 id="intento-3-se-ingresa-letra-o">Intento 3, se ingresa letra 'o'</h4>
-<pre><code>Intentos: 3/10
+<p><strong>  Intento 3, se ingresa letra 'o' </strong> </p>
+<pre><code>Jugador: Marcos
+Intentos: 3/10
 Aciertos: 1
 Palabra:
 
@@ -200,8 +652,9 @@ Ingrese Letra/Palabra: o
 </code></pre>
 
 <hr />
-<h4 id="intento-4-se-ingresa-palabra-hola">Intento 4, se ingresa palabra 'hola'</h4>
+<p><strong>  Intento 4, se ingresa palabra 'hola' </strong> </p>
 <pre><code>
+Jugador: Marcos
 Intentos: 4/10
 Aciertos: 2
 Palabra:
@@ -212,11 +665,11 @@ Palabra:
 Ingrese Letra/Palabra: hola
 </code></pre>
 
-<h4 id="fin-de-juego">Fin de Juego</h4>
+<p><strong>  Fin de Juego </strong> </p>
 <pre><code>######### GANO!!! #########
 
-FIN DE JUEGO
 Palabra adivinada: 'hola'
+Jugador: Marcos
 Intentos: 4/10
 
 Presione Enter para volver a Menu
@@ -224,58 +677,75 @@ Presione Enter para volver a Menu
 </code></pre>
 
 <hr />
-<h4 id="si-en-caso-perdiera">Si en caso Perdiera</h4>
+<p><strong> Si en caso Perdiera </strong></p>
 <pre><code>######### GAME OVER #########
 
-FIN DE JUEGO
 Palabra a adivinar: 'hola'
+Jugador: Marcos
 Intentos: 10/10
 
 Presione Enter para volver a Menu
 
 </code></pre>
+                
+                  
+                
               
-            </div>
+              
+                
+
+
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="../../projects/" class="btn btn-neutral" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../para_entregar/" title="Para Entregar" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Para Entregar
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
   </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+    </div>
+    
+      <script src="../../../assets/javascripts/application.8e03edeb.js"></script>
       
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
-        <span><a href="../../projects/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-    </span>
-</div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-
-</body>
+    
+  </body>
 </html>
