@@ -1,8 +1,6 @@
-# Projects
 
-lista de todos los proyectos que veremos en clase.
+# Lista de Proyectos a realizar durante el curso
 
-
-# Lista
+A continuacion la lista de proyectos y mini proyectos
 
 1. [Hangman](hangman/hangman.md)
