@@ -523,13 +523,13 @@
 <p>Se le brindara un proyecto base con algunas "funciones" ya agregadas sobre las cuales usted agregara logica, programacion y codigo propio.</p>
 <p>El proyecto se divira en Modulos o Fase, a manera que usted pueda ir cubriendo fase por fase y hacer pequeños incrementos.</p>
 <h2 id="trabajo">Trabajo</h2>
-<p>Se Trabajara en parejas o individual, sin excepcion.</p>
+<p>Se Trabajara en <mark>parejas o individual</mark>, sin excepcion.</p>
 <h2 id="proyecto-base-para-empezar"><a href="https://github.com/cs-ufm/hangman">Proyecto Base</a> - Para empezar</h2>
-<p>Este es el <a href="https://github.com/cs-ufm/hangman">proyecto Base</a> que usted puede utilizar</p>
+<p>Este es el <mark><a href="https://github.com/cs-ufm/hangman">proyecto Base</a></mark> que usted puede utilizar</p>
 <p>Asegurese de:</p>
-<ul>
-<li>[ ] Hacer FORK!</li>
-<li>[ ] Llenar las secciones necesarias del README.md</li>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Hacer FORK!</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Llenar las secciones necesarias del README.md</li>
 </ul>
 <hr />
 <h2 id="fase-1">Fase 1</h2>
@@ -554,9 +554,10 @@
 </pre></div>
 
 
-<blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p><code>Por Favor sea creativo esto es solo un ejemplo del Menu, usted puede *agregar* (no quitar) opciones, puede utilizar otro formato mas bonito si desea</code></p>
-</blockquote>
+</div>
 <h4 id="empezar-juego">Empezar Juego</h4>
 <p>Existiran 2 "pantallas":</p>
 <ol>
@@ -580,25 +581,25 @@ momento del juego mostrar el nombre del jugador.</p>
 </pre></div>
 
 
-<blockquote>
+<div class="admonition note">
 <p>al elegir opcion '1'</p>
 <p><strong>NOTA:</strong> ignore los colores.</p>
-</blockquote>
+</div>
 <h4 id="ver-instrucciones">Ver Instrucciones</h4>
 <p>Mostrara las instrucciones de como jugar el juego, es como un pequeno "help menu"</p>
-<blockquote>
+<div class="admonition note">
 <p>al elegir opcion '2'</p>
-</blockquote>
+</div>
 <h4 id="about">About</h4>
 <p>Mostrara informacion del alumno desarrollador, correo electronico y/o algo mas que usted desee mostrar.</p>
-<blockquote>
+<div class="admonition note">
 <p>al elegir opcion '3'</p>
-</blockquote>
+</div>
 <h4 id="salir">Salir</h4>
 <p>Saldra de la ejecucion del juego. <code>exit(0);</code></p>
-<blockquote>
+<div class="admonition note">
 <p>al elegir opcion '4'</p>
-</blockquote>
+</div>
 <hr />
 <h2 id="fase-2">Fase 2</h2>
 <ul>
@@ -606,7 +607,7 @@ momento del juego mostrar el nombre del jugador.</p>
 <p>Recuerde que se le proveera un <a href="https://github.com/cs-ufm/hangman">Proyecto Base</a> del cual usted puede partir y agregar su codigo, funciones, etc.</p>
 </li>
 <li>
-<p>Dentro de ese proyecto se le provee un banco de palabras a adivinar, de longitud distinta, usted puede modificar este banco de palabras (lea los comentarios en el proyecto base). Este banco de palabras NO tendra palabras con numeros! aseguerese de NO agregar una palabra con numeros. [esto ya esta hecho]</p>
+<p>Dentro de ese proyecto se le provee un banco de palabras a adivinar, de longitud distinta, usted puede modificar este banco de palabras (lea los comentarios en el proyecto base). Este banco de palabras NO tendra palabras con numeros! aseguerese de NO agregar una palabra con numeros. <mark>[esto ya esta hecho]</mark></p>
 </li>
 </ul>
 <div class="codehilite"><pre><span></span><span class="c1">//banco de palabras.</span>
@@ -622,7 +623,7 @@ momento del juego mostrar el nombre del jugador.</p>
 
 <ul>
 <li>
-<p>seleccionara una palabra aleatoria de ese banco y la asignara a una variable. [esto ya esta hecho mediante una funcion]</p>
+<p>seleccionara una palabra aleatoria de ese banco y la asignara a una variable. <mark>[esto ya esta hecho mediante una funcion]</mark></p>
 </li>
 <li>
 <p>Mostrar en la pantalla de juego la palabra seleccionada "oculta" de esta manera: <code>_ _ _ _ _</code>  underscores dependiendo la cantidad de letras que tenga. Por ejemplo si la palabra fuera "guatemala" entonces se mostrar de esta manera <code>_  _  _ _ _  _  _ _ _ _ _ _</code></p>
@@ -639,19 +640,13 @@ momento del juego mostrar el nombre del jugador.</p>
 <li>el juego se puede terminar al:<ul>
 <li>completar la palabra letra por letra o</li>
 <li>ingresar la palabra directamente</li>
-<li>presionar la letra <code>0</code> (numero cero) *</li>
+<li>presionar la letra <code>0</code> (numero cero)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 </ul>
 </li>
 <li>cada que se imprima o refresque la pantalla puede hacer un <code>clearscreen</code> o bien imprimir lineas a manera que se "refresque"</li>
 <li>Al terminar el juego y ganar se mostrara una pantalla de "Victoria" con el resumen del juego. (vea el <a href="#ejemplo">ejemplo</a>)</li>
 <li>Al terminar el juego y haber perdido se mostrara una pantalla de "Derrota" con el resumen de juego. (vea el <a href="#ejemplo">ejemplo</a>)</li>
 </ul>
-<blockquote>
-<ul>
-<li>por eso es indispensable que ninguna palabra contenga algun numero!</li>
-<li>puede alterar la combinacion para salir por un '0Q' o '0Z'</li>
-</ul>
-</blockquote>
 <div class="codehilite"><pre><span></span><span class="c1">//clearscreen</span>
 <span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 
@@ -742,6 +737,16 @@ momento del juego mostrar el nombre del jugador.</p>
 
 <span class="l l-Scalar l-Scalar-Plain">Presione Enter para volver a Menu</span>
 </pre></div>
+
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>por eso es indispensable que ninguna palabra contenga algun numero!; puede alterar la combinacion para salir por un '0Q' o '0Z'&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 
