@@ -1,5 +1,7 @@
 site_name: Computer Science 101
 
+repo_url: https://github.com/cs-ufm/cs101-2020
+
 theme:
   name: material
   palette:

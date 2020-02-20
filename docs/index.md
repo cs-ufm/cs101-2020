@@ -1,5 +1,6 @@
 # Computer Science 101 - 2020
 
+Esta sera la pagina que utilizaremos para publicar cualquier proyecto
 
 
 # [Proyectos](projects/projects.md)
@@ -11,11 +12,11 @@ Para acceder a la pagina donde se publicaran las instrucciones de los proyectos 
 # Ejemplos de diferentes lenguajes
 Coleccion de ejemplos en clase.
 
-## C
+### C
 
 folder [c/](https://github.com/cs-ufm/cs101-2020/tree/master/c) con ejemplos unicamente de Lenguaje C.
 
-## Python
+### Python
 
 Folder [python/](https://github.com/cs-ufm/cs101-2020/tree/master/c) con ejemplos unicamente para lenguaje Python 3.
 
