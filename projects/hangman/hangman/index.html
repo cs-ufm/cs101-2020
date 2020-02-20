@@ -36,7 +36,7 @@
     
     
       
-        <title>Instrucciones - Computer Science 101</title>
+        <title>1. Instrucciones - Computer Science 101</title>
       
     
     
@@ -109,7 +109,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Instrucciones
+                1. Instrucciones
               
             </span>
           
@@ -242,18 +242,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../para_entregar/" title="Para Entregar" class="md-nav__link">
-      Para Entregar
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -265,11 +253,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Instrucciones
+        1. Instrucciones
       </label>
     
-    <a href="./" title="Instrucciones" class="md-nav__link md-nav__link--active">
-      Instrucciones
+    <a href="./" title="1. Instrucciones" class="md-nav__link md-nav__link--active">
+      1. Instrucciones
     </a>
     
       
@@ -281,6 +269,13 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trabajo" class="md-nav__link">
+    Trabajo
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#proyecto-base-para-empezar" class="md-nav__link">
@@ -375,6 +370,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../para_entregar/" title="2. Forma de Entrega" class="md-nav__link">
+      2. Forma de Entrega
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -404,6 +411,13 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trabajo" class="md-nav__link">
+    Trabajo
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#proyecto-base-para-empezar" class="md-nav__link">
@@ -508,6 +522,8 @@
 <p>Para este proyecto usted realizara un hangman (ahorcado) con algunos detalles propios.</p>
 <p>Se le brindara un proyecto base con algunas "funciones" ya agregadas sobre las cuales usted agregara logica, programacion y codigo propio.</p>
 <p>El proyecto se divira en Modulos o Fase, a manera que usted pueda ir cubriendo fase por fase y hacer pequeños incrementos.</p>
+<h2 id="trabajo">Trabajo</h2>
+<p>Se Trabajara en parejas o individual, sin excepcion.</p>
 <h2 id="proyecto-base-para-empezar"><a href="https://github.com/cs-ufm/hangman">Proyecto Base</a> - Para empezar</h2>
 <p>Este es el <a href="https://github.com/cs-ufm/hangman">proyecto Base</a> que usted puede utilizar</p>
 <p>Asegurese de:</p>
@@ -518,30 +534,55 @@
 <hr />
 <h2 id="fase-1">Fase 1</h2>
 <ul>
-<li>tendra un Menu para que el usuario pueda jugar, detallado mas adelante.</li>
-<li>Este menu debera iterar indefinidamente hasta que el usuario solicite salir (2 maneras de salir, una de ellas se explica aqui 'opcion 4', para la segunda continue leyendo)</li>
+<li>
+<p>Crear un Menu para que el usuario pueda jugar, Ver Instrucciones, About y Salir del juego, detallado mas adelante. Este Menu debe mostrar las opciones y solamente esperar que el usuario ingrese una de las varias opciones para continuar.</p>
+</li>
+<li>
+<p>Este menu debera iterar infinitamente hasta que el usuario solicite salir (2 maneras de salir, una de ellas se explica aqui 'opcion 4', para la segunda continue leyendo), es decir si el jugador pierde o gana debe regresar a este menu.</p>
+</li>
 </ul>
 <h3 id="menu">Menu</h3>
-<p>Se debera pedir una opcion dentro de 4 opciones, si ingresa opcion '4' por ejemplo debera salir.</p>
-<pre><code>######### HANGMAN MENU #########
+<p>Se debera pedir al usuario una opcion dentro de 4 opciones, si ingresa opcion '4' por ejemplo debera salir.</p>
+<div class="codehilite"><pre><span></span><span class="c1">######### HANGMAN MENU #########</span>
 
-1. Empezar Juego
-2. Ver Instrucciones
-3. About
-4. Salir
+<span class="l l-Scalar l-Scalar-Plain">1. Empezar Juego</span>
+<span class="l l-Scalar l-Scalar-Plain">2. Ver Instrucciones</span>
+<span class="l l-Scalar l-Scalar-Plain">3. About</span>
+<span class="l l-Scalar l-Scalar-Plain">4. Salir</span>
 
-Ingrese Opcion:
+<span class="l l-Scalar l-Scalar-Plain">Ingrese Opcion</span><span class="p p-Indicator">:</span>
+</pre></div>
 
-</code></pre>
 
 <blockquote>
 <p><code>Por Favor sea creativo esto es solo un ejemplo del Menu, usted puede *agregar* (no quitar) opciones, puede utilizar otro formato mas bonito si desea</code></p>
 </blockquote>
 <h4 id="empezar-juego">Empezar Juego</h4>
-<p>Debera Pedir el nombre del jugador o el Usuario/Alias (Algo como: Fox, Rabbit) y en todo 
+<p>Existiran 2 "pantallas":</p>
+<ol>
+<li>Ingreso de Nombre de Jugador:</li>
+</ol>
+<p>Debera Pedir el nombre del jugador o el Usuario/Alias (Algo como: Fox, Rabbit) y en todo
 momento del juego mostrar el nombre del jugador.</p>
+<ol>
+<li>Juego:</li>
+</ol>
+<p>Y empezar a mostar la "pantalla" de juego mostrada en <a href="#ejemplo">Ejemplo</a></p>
+<div class="codehilite"><pre><span></span><span class="nt">Jugador</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Marcos</span>
+<span class="nt">Intentos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">4/10</span>
+<span class="nt">Aciertos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">Palabra</span><span class="p">:</span>
+
+        <span class="l l-Scalar l-Scalar-Plain">_ o _ a</span>
+
+
+<span class="nt">Ingrese Letra/Palabra</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">s</span>
+</pre></div>
+
+
 <blockquote>
 <p>al elegir opcion '1'</p>
+<p><strong>NOTA:</strong> ignore los colores.</p>
 </blockquote>
 <h4 id="ver-instrucciones">Ver Instrucciones</h4>
 <p>Mostrara las instrucciones de como jugar el juego, es como un pequeno "help menu"</p>
@@ -561,24 +602,35 @@ momento del juego mostrar el nombre del jugador.</p>
 <hr />
 <h2 id="fase-2">Fase 2</h2>
 <ul>
-<li>le proveeremos un banco de palabras a adivinar, de longitud distinta, usted puede modificar este banco de palabras. Este banco de palabras no tendra palabras con numeros! aseguerese de no agregar una palabra con numeros</li>
+<li>
+<p>Recuerde que se le proveera un <a href="https://github.com/cs-ufm/hangman">Proyecto Base</a> del cual usted puede partir y agregar su codigo, funciones, etc.</p>
+</li>
+<li>
+<p>Dentro de ese proyecto se le provee un banco de palabras a adivinar, de longitud distinta, usted puede modificar este banco de palabras (lea los comentarios en el proyecto base). Este banco de palabras NO tendra palabras con numeros! aseguerese de NO agregar una palabra con numeros. [esto ya esta hecho]</p>
+</li>
 </ul>
-<pre><code class="c">const char *word_collection[MAX_WORDS]= {
-                    &quot;este&quot;,&quot;es&quot;,&quot;un&quot;,&quot;banco&quot;,&quot;de&quot;,
-                    &quot;palabras&quot;,&quot;sientase&quot;,&quot;en&quot;,&quot;libertad&quot;,
-                    &quot;de&quot;,&quot;agregar&quot;,&quot;la&quot;,&quot;cantidad&quot;,&quot;de&quot;,
-                    &quot;palabras&quot;,&quot;que&quot;,&quot;usted&quot;,&quot;desee&quot;,&quot;hasta&quot;,
-                    &quot;un&quot;,&quot;maximo&quot;,&quot;de&quot;,&quot;MAX_WORDS&quot;
-                    };
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1">//banco de palabras.</span>
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">word_collection</span><span class="p">[</span><span class="n">MAX_WORDS</span><span class="p">]</span><span class="o">=</span> <span class="p">{</span>
+                    <span class="s">&quot;este&quot;</span><span class="p">,</span><span class="s">&quot;es&quot;</span><span class="p">,</span><span class="s">&quot;un&quot;</span><span class="p">,</span><span class="s">&quot;banco&quot;</span><span class="p">,</span><span class="s">&quot;de&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;palabras&quot;</span><span class="p">,</span><span class="s">&quot;sientase&quot;</span><span class="p">,</span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="s">&quot;libertad&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;de&quot;</span><span class="p">,</span><span class="s">&quot;agregar&quot;</span><span class="p">,</span><span class="s">&quot;la&quot;</span><span class="p">,</span><span class="s">&quot;cantidad&quot;</span><span class="p">,</span><span class="s">&quot;de&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;palabras&quot;</span><span class="p">,</span><span class="s">&quot;que&quot;</span><span class="p">,</span><span class="s">&quot;usted&quot;</span><span class="p">,</span><span class="s">&quot;desee&quot;</span><span class="p">,</span><span class="s">&quot;hasta&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;un&quot;</span><span class="p">,</span><span class="s">&quot;maximo&quot;</span><span class="p">,</span><span class="s">&quot;de&quot;</span><span class="p">,</span><span class="s">&quot;MAX_WORDS&quot;</span>
+                    <span class="p">};</span>
+</pre></div>
+
 
 <ul>
-<li>seleccionara una palabra aleatoria de ese banco. (esto ya esta hecho)</li>
-<li>la palabra seleccionada solamente se mostrara de esta manera: <code>"_ _ _ _ _"</code>  underscores dependiendo la cantidad de letras que tenga.</li>
-<li>emepezara el juego y el usuario empezara a ingresar letras que cree que la palabra contiene</li>
-<li>el usuario tendra N (N debe ser una variable global que sea facil de cambiar, comenzara en 7) intentos antes que se ahorque (se acabe el juego)</li>
-<li>cada que se adivine una letra se "descubrira" esa letra las veces que aparezca esa letra dentro de la palabra.</li>
-<li>todo sera en modo consola o modo terminal</li>
+<li>
+<p>seleccionara una palabra aleatoria de ese banco y la asignara a una variable. [esto ya esta hecho mediante una funcion]</p>
+</li>
+<li>
+<p>Mostrar en la pantalla de juego la palabra seleccionada "oculta" de esta manera: <code>_ _ _ _ _</code>  underscores dependiendo la cantidad de letras que tenga. Por ejemplo si la palabra fuera "guatemala" entonces se mostrar de esta manera <code>_  _  _ _ _  _  _ _ _ _ _ _</code></p>
+</li>
+<li>emepezara el juego y el usuario empezara a ingresar (adivinar) letras que cree que la palabra contiene o la palabra directamente.</li>
+<li>el usuario tendra N (N debe ser una variable global que sea facil de cambiar, comenzara en 10) intentos antes que se ahorque (se acabe el juego)</li>
+<li>cada que se adivine una letra se "descubrira" esa letra las veces que aparezca esa letra dentro de la palabra y se mostrara en la siguiente vez que se refresque la pantalla. (vea <a href="#ejemplo">ejemplo</a> )</li>
+<li>todo sera en modo consola o modo terminal, sin colores (al menos que usted desee agregar colores por puntas extra)</li>
 <li>no habra distincion de mayusculas o minusculas. (todo sera minusculas)</li>
 </ul>
 <hr />
@@ -591,6 +643,8 @@ momento del juego mostrar el nombre del jugador.</p>
 </ul>
 </li>
 <li>cada que se imprima o refresque la pantalla puede hacer un <code>clearscreen</code> o bien imprimir lineas a manera que se "refresque"</li>
+<li>Al terminar el juego y ganar se mostrara una pantalla de "Victoria" con el resumen del juego. (vea el <a href="#ejemplo">ejemplo</a>)</li>
+<li>Al terminar el juego y haber perdido se mostrara una pantalla de "Derrota" con el resumen de juego. (vea el <a href="#ejemplo">ejemplo</a>)</li>
 </ul>
 <blockquote>
 <ul>
@@ -598,95 +652,96 @@ momento del juego mostrar el nombre del jugador.</p>
 <li>puede alterar la combinacion para salir por un '0Q' o '0Z'</li>
 </ul>
 </blockquote>
-<pre><code class="c">//clearscreen
-#include &lt;stdlib.h&gt;
+<div class="codehilite"><pre><span></span><span class="c1">//clearscreen</span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 
-void clearscreen()
-{
-    system(&quot;@cls||clear&quot;);
-}
-</code></pre>
+<span class="kt">void</span> <span class="nf">clearscreen</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">system</span><span class="p">(</span><span class="s">&quot;@cls||clear&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
 
 <hr />
 <h2 id="ejemplo">Ejemplo</h2>
 <p>Supongamos que se elige la palabra <code>'hola'</code></p>
 <hr />
 <p><strong> Intento 1, se ingresa letra 'a'</strong></p>
-<pre><code>
-Jugador: Marcos
-Intentos: 1/10
-Aciertos: 0
-Palabra:
+<div class="codehilite"><pre><span></span><span class="nt">Jugador</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Marcos</span>
+<span class="nt">Intentos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1/10</span>
+<span class="nt">Aciertos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="nt">Palabra</span><span class="p">:</span>
 
-        _ _ _ _
+        <span class="l l-Scalar l-Scalar-Plain">_ _ _ _</span>
 
 
-Ingrese Letra/Palabra: a
-</code></pre>
+<span class="nt">Ingrese Letra/Palabra</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">a</span>
+</pre></div>
+
 
 <hr />
-<p><strong>  Intento 2, se ingresa letra 'b' </strong> </p>
-<pre><code>
-Jugador: Marcos
-Intentos: 2/10
-Aciertos: 1
-Palabra:
+<p><strong>  Intento 2, se ingresa letra 'b' </strong></p>
+<div class="codehilite"><pre><span></span><span class="nt">Jugador</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Marcos</span>
+<span class="nt">Intentos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2/10</span>
+<span class="nt">Aciertos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="nt">Palabra</span><span class="p">:</span>
 
-        _ _ _ a
+        <span class="l l-Scalar l-Scalar-Plain">_ _ _ a</span>
 
 
-Ingrese Letra/Palabra: b
-</code></pre>
+<span class="nt">Ingrese Letra/Palabra</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">b</span>
+</pre></div>
+
 
 <hr />
-<p><strong>  Intento 3, se ingresa letra 'o' </strong> </p>
-<pre><code>Jugador: Marcos
-Intentos: 3/10
-Aciertos: 1
-Palabra:
+<p><strong>  Intento 3, se ingresa letra 'o' </strong></p>
+<div class="codehilite"><pre><span></span><span class="nt">Jugador</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Marcos</span>
+<span class="nt">Intentos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3/10</span>
+<span class="nt">Aciertos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="nt">Palabra</span><span class="p">:</span>
 
-        _ _ _ a
+        <span class="l l-Scalar l-Scalar-Plain">_ _ _ a</span>
 
 
-Ingrese Letra/Palabra: o
-</code></pre>
+<span class="nt">Ingrese Letra/Palabra</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">o</span>
+</pre></div>
+
 
 <hr />
-<p><strong>  Intento 4, se ingresa palabra 'hola' </strong> </p>
-<pre><code>
-Jugador: Marcos
-Intentos: 4/10
-Aciertos: 2
-Palabra:
+<p><strong>  Intento 4, se ingresa palabra 'hola' </strong></p>
+<div class="codehilite"><pre><span></span><span class="nt">Jugador</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Marcos</span>
+<span class="nt">Intentos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">4/10</span>
+<span class="nt">Aciertos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="nt">Palabra</span><span class="p">:</span>
 
-        _ o _ a
+        <span class="l l-Scalar l-Scalar-Plain">_ o _ a</span>
 
 
-Ingrese Letra/Palabra: hola
-</code></pre>
+<span class="nt">Ingrese Letra/Palabra</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hola</span>
+</pre></div>
 
-<p><strong>  Fin de Juego </strong> </p>
-<pre><code>######### GANO!!! #########
 
-Palabra adivinada: 'hola'
-Jugador: Marcos
-Intentos: 4/10
+<p><strong>  Fin de Juego </strong></p>
+<div class="codehilite"><pre><span></span><span class="c1">######### GANO!!! #########</span>
 
-Presione Enter para volver a Menu
+<span class="nt">Palabra adivinada</span><span class="p">:</span> <span class="s">&#39;hola&#39;</span>
+<span class="nt">Jugador</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Marcos</span>
+<span class="nt">Intentos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">4/10</span>
 
-</code></pre>
+<span class="l l-Scalar l-Scalar-Plain">Presione Enter para volver a Menu</span>
+</pre></div>
+
 
 <hr />
 <p><strong> Si en caso Perdiera </strong></p>
-<pre><code>######### GAME OVER #########
+<div class="codehilite"><pre><span></span><span class="c1">######### GAME OVER #########</span>
 
-Palabra a adivinar: 'hola'
-Jugador: Marcos
-Intentos: 10/10
+<span class="nt">Palabra a adivinar</span><span class="p">:</span> <span class="s">&#39;hola&#39;</span>
+<span class="nt">Jugador</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Marcos</span>
+<span class="nt">Intentos</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10/10</span>
 
-Presione Enter para volver a Menu
-
-</code></pre>
+<span class="l l-Scalar l-Scalar-Plain">Presione Enter para volver a Menu</span>
+</pre></div>
                 
                   
                 
@@ -707,7 +762,7 @@ Presione Enter para volver a Menu
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../para_entregar/" title="Para Entregar" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../projects/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -716,11 +771,25 @@ Presione Enter para volver a Menu
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Para Entregar
+                Overview
               </span>
             </div>
           </a>
         
+        
+          <a href="../para_entregar/" title="2. Forma de Entrega" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                2. Forma de Entrega
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
