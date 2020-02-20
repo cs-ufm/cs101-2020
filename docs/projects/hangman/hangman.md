@@ -12,11 +12,11 @@ El proyecto se divira en Modulos o Fase, a manera que usted pueda ir cubriendo f
 
 ## Trabajo
 
-Se Trabajara en parejas o individual, sin excepcion.
+Se Trabajara en ==parejas o individual==, sin excepcion.
 
 ## [Proyecto Base](https://github.com/cs-ufm/hangman) - Para empezar
 
-Este es el [proyecto Base](https://github.com/cs-ufm/hangman) que usted puede utilizar
+Este es el ==[proyecto Base](https://github.com/cs-ufm/hangman)== que usted puede utilizar
 
 Asegurese de:
 
@@ -51,7 +51,8 @@ Ingrese Opcion:
 
 ```
 
->  `Por Favor sea creativo esto es solo un ejemplo del Menu, usted puede *agregar* (no quitar) opciones, puede utilizar otro formato mas bonito si desea`
+!!! note
+    `Por Favor sea creativo esto es solo un ejemplo del Menu, usted puede *agregar* (no quitar) opciones, puede utilizar otro formato mas bonito si desea`
 
 
 #### Empezar Juego
@@ -81,26 +82,30 @@ Ingrese Letra/Palabra: s
 ```
 
 
-> al elegir opcion '1'
->
-> **NOTA:** ignore los colores.
+!!! note ""
+    al elegir opcion '1'
+
+    **NOTA:** ignore los colores.
 
 #### Ver Instrucciones
 
 Mostrara las instrucciones de como jugar el juego, es como un pequeno "help menu"
 
 
-> al elegir opcion '2'
+!!! note ""
+    al elegir opcion '2'
 
 #### About
 Mostrara informacion del alumno desarrollador, correo electronico y/o algo mas que usted desee mostrar.
 
-> al elegir opcion '3'
+!!! note ""
+    al elegir opcion '3'
 
 #### Salir
 Saldra de la ejecucion del juego. `exit(0);`
 
-> al elegir opcion '4'
+!!! note ""
+    al elegir opcion '4'
 
 
 ---
@@ -111,7 +116,7 @@ Saldra de la ejecucion del juego. `exit(0);`
 - Recuerde que se le proveera un [Proyecto Base](https://github.com/cs-ufm/hangman) del cual usted puede partir y agregar su codigo, funciones, etc.
 
 
-- Dentro de ese proyecto se le provee un banco de palabras a adivinar, de longitud distinta, usted puede modificar este banco de palabras (lea los comentarios en el proyecto base). Este banco de palabras NO tendra palabras con numeros! aseguerese de NO agregar una palabra con numeros. [esto ya esta hecho]
+- Dentro de ese proyecto se le provee un banco de palabras a adivinar, de longitud distinta, usted puede modificar este banco de palabras (lea los comentarios en el proyecto base). Este banco de palabras NO tendra palabras con numeros! aseguerese de NO agregar una palabra con numeros. ==[esto ya esta hecho]==
 
 
 ```c
@@ -125,7 +130,7 @@ const char *word_collection[MAX_WORDS]= {
                     };
 ```
 
-- seleccionara una palabra aleatoria de ese banco y la asignara a una variable. [esto ya esta hecho mediante una funcion]
+- seleccionara una palabra aleatoria de ese banco y la asignara a una variable. ==[esto ya esta hecho mediante una funcion]==
 
 - Mostrar en la pantalla de juego la palabra seleccionada "oculta" de esta manera: `_ _ _ _ _`  underscores dependiendo la cantidad de letras que tenga. Por ejemplo si la palabra fuera "guatemala" entonces se mostrar de esta manera `_  _  _ _ _  _  _ _ _ _ _ _`
 - emepezara el juego y el usuario empezara a ingresar (adivinar) letras que cree que la palabra contiene o la palabra directamente.
@@ -139,13 +144,12 @@ const char *word_collection[MAX_WORDS]= {
 - el juego se puede terminar al:
     - completar la palabra letra por letra o
     - ingresar la palabra directamente
-    - presionar la letra `0` (numero cero) *
+    - presionar la letra `0` (numero cero)[^1]
 - cada que se imprima o refresque la pantalla puede hacer un `clearscreen` o bien imprimir lineas a manera que se "refresque"
 - Al terminar el juego y ganar se mostrara una pantalla de "Victoria" con el resumen del juego. (vea el [ejemplo](#ejemplo))
 - Al terminar el juego y haber perdido se mostrara una pantalla de "Derrota" con el resumen de juego. (vea el [ejemplo](#ejemplo))
 
-> * por eso es indispensable que ninguna palabra contenga algun numero!
-> * puede alterar la combinacion para salir por un '0Q' o '0Z'
+[^1]: por eso es indispensable que ninguna palabra contenga algun numero!; puede alterar la combinacion para salir por un '0Q' o '0Z'
 
 
 ```c

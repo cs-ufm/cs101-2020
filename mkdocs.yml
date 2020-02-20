@@ -13,6 +13,11 @@ plugins:
   #- markdownextradata: {}
 markdown_extensions:
   - codehilite
+  - footnotes
+  - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.mark
 
 nav:
   - Home: index.md
