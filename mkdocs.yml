@@ -11,11 +11,13 @@ theme:
 plugins:
   - search
   #- markdownextradata: {}
+markdown_extensions:
+  - codehilite
 
 nav:
   - Home: index.md
   - Projects:
       - Overview: projects/projects.md
       - 1. Hangman:
-            Instrucciones: projects/hangman/hangman.md
-            Para Entregar: projects/hangman/para_entregar.md
+            1. Instrucciones: projects/hangman/hangman.md
+            2. Forma de Entrega: projects/hangman/para_entregar.md
