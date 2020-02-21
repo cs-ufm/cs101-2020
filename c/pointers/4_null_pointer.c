@@ -7,4 +7,5 @@
 
 int main(){
     int* n = NULL;
+    int a = *n;
 }
