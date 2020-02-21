@@ -66,7 +66,7 @@ momento del juego mostrar el nombre del jugador.
 
 
 !!! note "gets vs scanf"
-    para leer un string completo puede usar la funcion gets(str) lee todo un string hasta que se presione enter que  a diferencia de scanf que solo leeria la primer palabra ingresada y no todo el string.
+    para leer un string completo puede usar la funcion [gets(str)](https://www.tutorialspoint.com/c_standard_library/c_function_gets.htm) lee todo un string hasta que se presione enter que  a diferencia de scanf que solo leeria la primer palabra ingresada y no todo el string.
 
 2. Juego:
 
