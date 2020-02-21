@@ -64,6 +64,10 @@ Existiran 2 "pantallas":
 Debera Pedir el nombre del jugador o el Usuario/Alias (Algo como: Fox, Rabbit) y en todo
 momento del juego mostrar el nombre del jugador.
 
+
+!!! note "gets vs scanf"
+    para leer un string completo puede usar la funcion gets(str) lee todo un string hasta que se presione enter que  a diferencia de scanf que solo leeria la primer palabra ingresada y no todo el string.
+
 2. Juego:
 
 Y empezar a mostar la "pantalla" de juego mostrada en [Ejemplo](#ejemplo)
