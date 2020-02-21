@@ -2,9 +2,9 @@ deploy: git
 	@mkdocs gh-deploy
 
 git:
-	@git add .
-	@git commit -m "auto deploy"
-	@git push origin master
+	@git add . || true
+	@git commit -m "auto deploy" || true
+	@git push origin master || true
 
 serve:
 	@mkdocs serve
