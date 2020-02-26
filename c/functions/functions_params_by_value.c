@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//? by VALUE
 void doit( int x )
 {
     x = 5;

@@ -1,7 +1,7 @@
 #include <stdio.h>
-
+//?  by REF
 // * USING POINTERS
-void doit( int* x ){
+void doit( int *x ){
         *x = 5;
 }
 

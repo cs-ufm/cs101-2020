@@ -3,10 +3,10 @@
 
 void arrays_are_pointers(){
     printf("\nArray names are pointers\n\n");
-    char* arr[3] = { 'A','B','C'};
+    char arr[3] = { 'A','B','C'};
 
-    printf("Address of arr[0]: \n&arr[0] %x \n\n",&arr[0]);
-    printf("Value of arr[0]:\n *(&arr[0]) %i or arr[0] \n", *(&arr[0]), arr[0]);
+    printf("Address of arr[0]: \n&arr[0] %p \n\n",&arr[0]);
+    printf("Value of arr[0]:\n *(&arr[0]) %c or arr[0] %c \n", *(&arr[0]), arr[0]);
 }
 
 int main(){
@@ -21,7 +21,7 @@ int main(){
     for (;ptr<&numbers[5]; ptr++ ){
         // . *ptr is the value it points
         *ptr= base;
-        base*=2;
+        base=base*2;
     }
     for(int i = 0 ; i < 5 ; i++){
         printf("%i\n", numbers[i]);
