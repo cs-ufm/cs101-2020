@@ -28,5 +28,9 @@ nav:
   - Projects:
       - Overview: projects/projects.md
       - 1. Hangman:
-            1. Instrucciones: projects/hangman/hangman.md
+            1. Instrucciones: projects/hangman/index.md
             2. Forma de Entrega: projects/hangman/para_entregar.md
+      - 2. Airline Ticket Reservation:
+            1. Instrucciones: projects/airline/index.md
+            2. Appendix: projects/airline/appendix.md
+            3. Entrega: projects/airline/entrega.md
