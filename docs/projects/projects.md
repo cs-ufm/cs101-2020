@@ -3,4 +3,4 @@
 
 A continuacion la lista de proyectos y mini proyectos que se desarrollaran a lo largo del curso.
 
-1. [Hangman](hangman/hangman.md)
+1. [Hangman](hangman/index.md)
