@@ -21,8 +21,8 @@ Este es el ==[proyecto Base](https://github.com/cs-ufm/hangman)== que usted pued
 Asegurese de:
 
 
-- [ ] Hacer FORK!
-- [ ] Llenar las secciones necesarias del README.md
+- [ ] Hacer [FORK!](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [ ] Llenar las secciones necesarias del README.md de su Forked repo.
 
 
 ---
