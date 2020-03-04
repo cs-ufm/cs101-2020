@@ -48,5 +48,5 @@ nav:
             2. Appendix: projects/airline/appendix.md
             3. Entrega: projects/airline/entrega.md
   - HDT:
-    - "index.md"
+    - "hdt/index.md"
     - "C Punteros": hdt/c.pointers.md
