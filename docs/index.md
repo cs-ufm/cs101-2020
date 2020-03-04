@@ -1,6 +1,9 @@
 # Computer Science 101 - 2020
 
-Esta sera la pagina que utilizaremos para publicar cualquier proyecto
+Esta sera la pagina que utilizaremos para publicar cualquier proyecto.
+
+!!! danger "NO FORK"
+    No hagan fork a este repositorio.
 
 # [HDT](hdt/index.md)
 

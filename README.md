@@ -2,6 +2,10 @@
 
 Coleccion de ejemplos en clase para el año 2020.
 
+
+⚠️ "NO FORK"
+No hagan fork a este repositorio.
+
 # C
 
 folder [c/](c/) con ejemplos unicamente de Lenguaje C.
