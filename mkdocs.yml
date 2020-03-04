@@ -5,7 +5,8 @@ repo_url: https://github.com/cs-ufm/cs101-2020
 theme:
   name: material
   palette:
-    primary: blue grey
+    primary: deep blue
+    accent: orange
 
   logo: 'img/logo.png'
 
@@ -45,8 +46,9 @@ nav:
             2. Forma de Entrega: projects/hangman/para_entregar.md
       - 2. Airline Ticket Reservation:
             1. Instrucciones: projects/airline/index.md
-            2. Appendix: projects/airline/appendix.md
-            3. Entrega: projects/airline/entrega.md
+            2. Ejemplo: projects/airline/ejemplo.md
+            3. Appendix: projects/airline/appendix.md
+            4. Entrega: projects/airline/entrega.md
   - HDT:
     - "hdt/index.md"
     - "C Punteros": hdt/c.pointers.md

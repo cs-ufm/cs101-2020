@@ -90,3 +90,14 @@ int main()
     return 0;
 }
 ```
+
+## clearscreen
+```c
+//clearscreen
+#include <stdlib.h>
+
+void clearscreen()
+{
+    system("@cls||clear");
+}
+```
