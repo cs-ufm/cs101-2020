@@ -23,6 +23,19 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.mark
 
+  - pymdownx.extra
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.smartsymbols
+
 nav:
   - Home: index.md
   - Projects:
@@ -34,3 +47,6 @@ nav:
             1. Instrucciones: projects/airline/index.md
             2. Appendix: projects/airline/appendix.md
             3. Entrega: projects/airline/entrega.md
+  - HDT:
+    - "index.md"
+    - "C Punteros": hdt/c.pointers.md

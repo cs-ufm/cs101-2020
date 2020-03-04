@@ -2,7 +2,9 @@
 
 Esta sera la pagina que utilizaremos para publicar cualquier proyecto
 
+# [HDT](hdt/index.md)
 
+Solucion de Hojas de Trabajo vistas en clase.
 # [Proyectos](projects/projects.md)
 
 Para acceder a la pagina donde se publicaran las instrucciones de los proyectos y mini proyectos, [haga click aqui](projects/projects.md)
