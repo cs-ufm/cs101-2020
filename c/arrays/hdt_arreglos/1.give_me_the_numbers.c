@@ -4,7 +4,6 @@ cree un arreglo de tamaño X y que itere X veces pidiendole al usuario que ingre
 **/
 
 #include <stdio.h>
-#define MAX_TAMANIO 100      // Tamaño maximo de un arreglo (Para evitar usar arreglos muy grandes)
 
 int main()
 {
