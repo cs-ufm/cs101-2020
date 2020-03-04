@@ -47,7 +47,7 @@
       
         
         
-        <meta name="theme-color" content="#546e7a">
+        <meta name="theme-color" content="">
       
     
     
@@ -71,7 +71,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="">
+    <body dir="ltr" data-md-color-primary="deep-blue" data-md-color-accent="orange">
   
     <svg class="md-svg">
       <defs>
@@ -398,49 +398,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejemplo" class="md-nav__link">
-    Ejemplo
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#menu-bienvenida" class="md-nav__link">
-    Menu Bienvenida
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reservar-asiento" class="md-nav__link">
-    Reservar Asiento
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vuelo-aa123-ingrese-asiento-a-reservar-a6" class="md-nav__link">
-    # Vuelo AA123
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#asiento-a6-reservado-exitosamente-presione-enter-para-volver-al-menu-principal" class="md-nav__link">
-    Asiento &#39;A6&#39; reservado exitosamente!!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ver-disponibilidad-de-asientos" class="md-nav__link">
-    Ver disponibilidad de Asientos
+  <a href="#puntos-extra" class="md-nav__link">
+    Puntos Extra
   </a>
   
 </li>
@@ -462,8 +421,8 @@
 
 
   <li class="md-nav__item">
-    <a href="appendix/" title="2. Appendix" class="md-nav__link">
-      2. Appendix
+    <a href="ejemplo/" title="2. Ejemplo" class="md-nav__link">
+      2. Ejemplo
     </a>
   </li>
 
@@ -474,8 +433,20 @@
 
 
   <li class="md-nav__item">
-    <a href="entrega/" title="3. Entrega" class="md-nav__link">
-      3. Entrega
+    <a href="entrega/" title="4. Entrega" class="md-nav__link">
+      4. Entrega
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="appendix/" title="3. Appendix" class="md-nav__link">
+      3. Appendix
     </a>
   </li>
 
@@ -594,49 +565,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejemplo" class="md-nav__link">
-    Ejemplo
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#menu-bienvenida" class="md-nav__link">
-    Menu Bienvenida
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reservar-asiento" class="md-nav__link">
-    Reservar Asiento
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vuelo-aa123-ingrese-asiento-a-reservar-a6" class="md-nav__link">
-    # Vuelo AA123
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#asiento-a6-reservado-exitosamente-presione-enter-para-volver-al-menu-principal" class="md-nav__link">
-    Asiento &#39;A6&#39; reservado exitosamente!!
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ver-disponibilidad-de-asientos" class="md-nav__link">
-    Ver disponibilidad de Asientos
+  <a href="#puntos-extra" class="md-nav__link">
+    Puntos Extra
   </a>
   
 </li>
@@ -664,7 +594,10 @@
 <h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h2>
 <hr />
 <p><img alt="1" src="../../img/ticket.png" /></p>
-<hr />
+<div class="admonition note">
+<p class="admonition-title">Clear Screen</p>
+<p>en todo tiempo es mejor si hace un <a href="appendix/#clearscreen">clear screen</a></p>
+</div>
 <p>Usted simulara un sistema de reservas de <mark>asiento de vuelo</mark> desde la perspectiva de la Aerolinea (operador), no desde el usuario.</p>
 <p>Cuando uno reserva en linea un vuelo hay una seccion en la que uno puede elegir el asiento de su vuelo, para este proyecto es esta fase de la reserva que usted debe implementar.</p>
 <p>Los asientos de un vuelo se representan con una Letra del abecedario (ABC DEF, 6 caracteres, Numero de columnas) + un digito (1-32, numero de filas), ejemplos:</p>
@@ -765,8 +698,8 @@
 <h2 id="fase-1-menu">Fase 1 - Menu<a class="headerlink" href="#fase-1-menu" title="Permanent link">&para;</a></h2>
 <p>Para esta fase debe desarrollar un menu de bienvenida</p>
 <ul>
-<li>La matriz se inicializara todas las casillas en '0', ningun asiento reservado.</li>
-<li>Mostrara un menu con opciones para empezar a reservar.</li>
+<li>La matriz se inicializara todas las casillas en <code class="codehilite"><span class="err">&#39;0&#39;</span></code>, ningun asiento reservado.</li>
+<li>Mostrara un <mark>menu</mark> con opciones para empezar a reservar.</li>
 <li>Pedira el numero de vuelo que la aerolinea estar trabajando, el formato del vuelo sera un texto de 5 caracteres,ejemplos: "AA101", "UA345", "BTZ11", no debe verificar nada de este ID excepto su longitud, este ID servira para mostrarlo en la terminal.</li>
 <li>Las opciones seran:<ol>
 <li>Reservar asiento</li>
@@ -776,33 +709,42 @@
 </li>
 <li>Este menu se ejecutara infinitamente, al menos que se seleccione la opcion "Salir"</li>
 </ul>
+<details class="info"><summary>Menu</summary><p><a href="ejemplo/#menu-bienvenida">Ejemplo</a></p>
+</details>
 <hr />
 <h2 id="fase-2-reservacion">Fase 2 - reservacion<a class="headerlink" href="#fase-2-reservacion" title="Permanent link">&para;</a></h2>
 <p>Si en el menu se elige la opcion "Reservar asiento" entrara a esta etapa.</p>
 <ol>
 <li>En esta fase se implementara la reserva de un asiento.</li>
-<li>Se le pedira al operador que ingrese un numero de asiento en el format "LetraDigito"</li>
+<li>Se le pedira al operador que ingrese un numero de asiento en el format <code class="codehilite"><span class="err">&quot;LetraDigito&quot;</span></code></li>
 <li>Su programa debera "interpretar" este formato a un formato de matriz[Letra][Digito], debera hacer alguna funcion que recibiendo una Letra devuelva el numero de columna que representa en la matriz de reservaciones.</li>
 <li>Una vez se interpreta eso, su programa debe verficiar si este asiento ya fue reservado, de ser asi se le mostrara al operador que el asiento esta reservado y que debe volver a elegir otro asiento (Volver a paso 2)</li>
 <li>Si el asiento se encuentra libre debe "reservar" este asiento en su matriz de alguna manera, explicada en la nota "reservas"</li>
 <li>Si el operador ingresa la palabra "menu" en el paso 2 entonces el programa debe salir de la "reserva" y regresara al menu principal.</li>
 </ol>
-<div class="admonition note">
+<div class="admonition info">
 <p class="admonition-title">reservas</p>
-<p>Dentro de su matriz:</p>
+<p><strong>Letra</strong>: columnas</p>
+<p><strong>Digito</strong>: Filas</p>
+<p><strong>Dentro de su matriz</strong>:</p>
 <ul>
-<li>Asientos reservados se representaran con <code class="codehilite"><span class="err">&#39;X&#39;</span></code>.</li>
+<li>Asientos reservados se representaran con <code class="codehilite"><span class="err">&#39;X&#39;</span></code><span class="critic comment">MAYUS</span>.</li>
 <li>Y asiento libre lo representara con <code class="codehilite"><span class="err">&#39;0&#39;</span></code></li>
 </ul>
+<p><a href="ejemplo/#reservar-asiento">Ejemplo</a></p>
 </div>
 <hr />
 <h2 id="fase-3-ver-disponibilidad">Fase 3 - Ver disponibilidad<a class="headerlink" href="#fase-3-ver-disponibilidad" title="Permanent link">&para;</a></h2>
-<p>Si en el menu se elige la opcion "Ver disponibilidad de Asientos" entrara a esta etapa.</p>
+<p>Si en el menu se elige la opcion "Ver disponibilidad de Asientos" entrara a esta parte.</p>
 <ol>
 <li>En esta fase se implementara la visualizacion de reservas</li>
 <li>Se mostara la matriz de una forma "grafica" en la terminal, con sus encabezados en columnas (A-F) y las filas (1-32)</li>
 <li>Mostrando los asientos reservados <code class="codehilite"><span class="err">&#39;X&#39;</span></code> y los asientos libres  <code class="codehilite"><span class="err">&#39;0&#39;</span></code></li>
 </ol>
+<div class="admonition info">
+<p class="admonition-title">Ejemplo</p>
+<p><a href="ejemplo/#ver-disponibilidad-de-asientos">Ejemplo</a></p>
+</div>
 <h2 id="fase-4-ver-resumen">Fase 4 -  Ver Resumen<a class="headerlink" href="#fase-4-ver-resumen" title="Permanent link">&para;</a></h2>
 <p>En esta fase debe mostrar un resumen de reservas.</p>
 <ul>
@@ -812,49 +754,29 @@
 <div class="admonition note">
 <p>Para esta fase debe <a href=""><strong>iterar</strong></a> sobre toda la matriz buscando asientos reservados y libres.</p>
 </div>
-<div class="codehilite"><pre><span></span><span class="c1">### RESUMEN</span>
-<span class="nt">Reservados</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3/32 [9.4%]</span>
-<span class="nt">Libres</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">29/32 [90.6%]</span>
-</pre></div>
-
+<div class="admonition info">
+<p class="admonition-title">Ejemplo</p>
+<p><a href="ejemplo/#ver-resumen">Ejemplo</a></p>
+</div>
 <hr />
-<h2 id="ejemplo">Ejemplo<a class="headerlink" href="#ejemplo" title="Permanent link">&para;</a></h2>
-<h3 id="menu-bienvenida">Menu Bienvenida<a class="headerlink" href="#menu-bienvenida" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="c1">### Bienvenido al TRv1</span>
-<span class="l l-Scalar l-Scalar-Plain">1. Reservar asiento</span>
-<span class="l l-Scalar l-Scalar-Plain">2. Ver asiento disponibles</span>
-<span class="l l-Scalar l-Scalar-Plain">3. Ver Resumen.</span>
-<span class="l l-Scalar l-Scalar-Plain">4. Salir</span>
+<h2 id="puntos-extra">Puntos Extra<a class="headerlink" href="#puntos-extra" title="Permanent link">&para;</a></h2>
+<p>Si quiere obtener puntos extra sera posible de la siguiente manera,</p>
+<ul>
+<li>Agregara una nueva funcionalidad <code class="codehilite"><span class="err">Sugerir Asiento</span></code></li>
+<li>Cuando un vuelo se encuentra casi lleno sera muy dificil encontrar un asiento libre, que le parece si su programa le sugiere el asiento?</li>
+<li>Esta sugerencia debera suceder cuando en la fase de <a href="#fase-2---reservacion">reservacion</a> nos encontremos en el punto <strong>#4</strong> <span class="critic comment">mostrara al operador que el asiento esta reservado y que debe volver a elegir otro asiento (Volver a paso 2)</span></li>
+<li>Para poder sugerir un asiento que no este ocupado su programa debe 'recorrer' por toda la matriz de asientos hasta encontrar el primer asiento disponible y ese es el que va a sugerir.</li>
+</ul>
+<div class="admonition info cambio en menu">
+<p class="admonition-title">Info</p>
+<div class="codehilite"><pre><span></span><span class="n">Asiento</span> <span class="s1">&#39;A6&#39;</span> <span class="n">ya</span> <span class="n">reservado</span><span class="p">,</span> <span class="n">ingrese</span> <span class="n">un</span> <span class="n">nuevo</span> <span class="n">asiento</span>
+
+<span class="n">Sugerido</span><span class="p">:</span> <span class="s1">&#39;F4&#39;</span>
 </pre></div>
 
-<h3 id="reservar-asiento">Reservar Asiento<a class="headerlink" href="#reservar-asiento" title="Permanent link">&para;</a></h3>
-<h2 id="vuelo-aa123-ingrese-asiento-a-reservar-a6"><div class="codehilite"><pre><span></span><span class="c1"># Vuelo AA123</span>
-
-<span class="nt">Ingrese asiento a reservar</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">A6</span>
-</pre></div><a class="headerlink" href="#vuelo-aa123-ingrese-asiento-a-reservar-a6" title="Permanent link">&para;</a></h2>
-<p>si fuera asiento disponible</p>
-<h2 id="asiento-a6-reservado-exitosamente-presione-enter-para-volver-al-menu-principal"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Asiento &#39;A6&#39; reservado exitosamente!!</span>
-
-<span class="l l-Scalar l-Scalar-Plain">Presione &#39;Enter&#39; para volver al menu principal</span>
-</pre></div><a class="headerlink" href="#asiento-a6-reservado-exitosamente-presione-enter-para-volver-al-menu-principal" title="Permanent link">&para;</a></h2>
-<p>si fuera asiento no disponible y volveria a pedir <code class="codehilite"><span class="err">&quot;Ingrese asiento a reservar:&quot;</span></code></p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Asiento &#39;A6&#39; ya reservado, ingrese un nuevo asiento</span>
-</pre></div>
-
-<h3 id="ver-disponibilidad-de-asientos">Ver disponibilidad de Asientos<a class="headerlink" href="#ver-disponibilidad-de-asientos" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="p p-Indicator">|</span><span class="err">   | A | B | C | D | E | F |</span>
-<span class="l l-Scalar l-Scalar-Plain">-----------------------------</span>
-<span class="l l-Scalar l-Scalar-Plain">| 1 | 0 | 0 | X | 0 | 0 | 0 |</span>
-<span class="l l-Scalar l-Scalar-Plain">| 2 | 0 | 0 | 0 | 0 | 0 | 0 |</span>
-<span class="l l-Scalar l-Scalar-Plain">| 3 | 0 | 0 | 0 | 0 | 0 | 0 |</span>
-<span class="l l-Scalar l-Scalar-Plain">| 4 | 0 | 0 | 0 | 0 | 0 | 0 |</span>
-<span class="l l-Scalar l-Scalar-Plain">.</span>
-<span class="l l-Scalar l-Scalar-Plain">.</span>
-<span class="l l-Scalar l-Scalar-Plain">.</span>
-<span class="l l-Scalar l-Scalar-Plain">| 32| 0 | 0 | 0 | 0 | 0 | 0 |</span>
-
-<span class="l l-Scalar l-Scalar-Plain">Presione &#39;Enter&#39; para volver al menu principal.</span>
-</pre></div>
+</div>
+<hr />
+<p><br></p>
                 
                   
                 
@@ -890,13 +812,13 @@
           </a>
         
         
-          <a href="appendix/" title="2. Appendix" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="ejemplo/" title="2. Ejemplo" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                2. Appendix
+                2. Ejemplo
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
