@@ -34,6 +34,7 @@ int main()
 
     /*
      * Por ultimo, dividimos la suma de todos los elementos del arreglo entre la cantidad de elementos del arreglo
+     * Ojo que se "almacena" en un double.
      */
     double promedio = suma / tamanio ;
 
