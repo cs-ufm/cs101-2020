@@ -1,10 +1,10 @@
+# ⚠️ "NO FORK" No hagan fork a este repositorio.
+
 # Computer Science 101 - año 2020
 
 Coleccion de ejemplos en clase para el año 2020.
 
 
-⚠️ "NO FORK"
-No hagan fork a este repositorio.
 
 # C
 
