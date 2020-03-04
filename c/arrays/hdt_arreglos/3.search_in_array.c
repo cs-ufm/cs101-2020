@@ -1,39 +1,27 @@
-/**
- * Programa que busca un elemento dentro de un arreglo
- */
+// search_in_array Que pida al usuario un número y que lo busque dentro del arreglo,
+// si lo encuentra debe mostrar un mensaje que muestre en qué posición lo encontró,
+// de no encontrarlo deberá mostrar un mensaje que diga que no lo encontró.
 
 #include <stdio.h>
 
-#define MAX_TAMANIO 100  // Tamaño maximo de un arreglo (Para evitar usar arreglos muy grandes)
+#define LENGTH 5  // Tamaño maximo de un arreglo (Para evitar usar arreglos muy grandes)
 
 int main()
 {
-    int arr[MAX_TAMANIO];
-    int tamanio;
-    int i;
-    int aBuscar;
-    int encontrado;
+    int arr[LENGTH]={1,4,3,6,10};
+    int aBuscar,i;
 
-    /* Ingrese tamaño del arreglo */
-    printf("Ingrese tamaño del arreglo: ");
-    scanf("%d", &tamanio);
+    short encontrado;
 
-    /* Ingrese los elementos del arreglo */
-    printf("Ingrese los elementos del arreglo: ");
-    for(i=0; i<tamanio; i++)
-    {
-        scanf("%d", &arr[i]);
-    }
-
-    printf("\nIngrese cual elemento desea buscar: ");
+    printf("\nIngrese cual numero desea buscar: ");
     scanf("%d", &aBuscar);
 
     /* Asumir que el elemento no fue encontrado dentro del arreglo */
-    encontrado = 0; 
-    
-    for(i=0; i<tamanio; i++)
+    encontrado = 0;
+
+    for(i=0; i<LENGTH; i++)
     {
-        /* 
+        /*
          * Si un elemento es encontrado, levantar una bandera
          * y luego terminar el ciclo FOR.
          */
@@ -46,6 +34,7 @@ int main()
 
     /*
      * Si un elemento no es encontrado dentro del arreglo
+     * Tambien esto pudo haber estado dentro del ciclo.
      */
     if(encontrado == 1)
     {
