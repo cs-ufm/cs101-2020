@@ -86,7 +86,7 @@ Para esperar que el usuario presione 'Enter' puede usar [`getchar()`](https://ww
 int main()
 {
     printf("Presione 'Enter'\n");
-    printf("%c", getchar());
+    getchar();
     return 0;
 }
 ```
