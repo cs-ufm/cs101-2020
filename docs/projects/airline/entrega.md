@@ -12,9 +12,17 @@ Para entregar su proyecto debera:
     - modificar
     - Todo y cada linea de codigo de su proyecto.
 
+
 ???+ fail "Integrantes"
     Si un integrante del grupo no es capaz de explicar, entender, modificar seran penalizados como grupo
 
 
+---
+!!! warning "Desarrollo Local"
+    **NO USE repl.it** para el desarrollo del proyecto, debe de instalar un compilador de C en su computadora, con repl es imposible trackear su avance en un sistema de control de versiones o [conecte su cuenta de repl con github](https://dev.to/twalton83/you-can-now-run-repos-on-repl-it-9dc) si no puede o no pudo conectar su cuenta de repl **NO USE repl.it**
+
+
+
+---
 ??? info "Ya leyo todo?"
     si leyo toda esta pagina haga click [aqui](appendix.md)
