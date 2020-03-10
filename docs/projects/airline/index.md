@@ -3,7 +3,7 @@
 
 ---
 !!! warning "Desarrollo Local"
-    **NO USE repl.it** para el desarrollo del proyecto, debe de instalar un compilador de C en su computadora, con repl es imposible trackear su avance en un sistema de control de versiones o [conecte su cuenta de repl con github](https://dev.to/twalton83/you-can-now-run-repos-on-repl-it-9dc)
+    **NO USE repl.it** para el desarrollo del proyecto, debe de instalar un compilador de C en su computadora, con repl es imposible trackear su avance en un sistema de control de versiones o [conecte su cuenta de repl con github](https://dev.to/twalton83/you-can-now-run-repos-on-repl-it-9dc) si no puede o no pudo conectar su cuenta de repl **NO USE repl.it**
 
 
 
