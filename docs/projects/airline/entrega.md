@@ -2,6 +2,18 @@
 
 Para entregar su proyecto debera:
 
-- Entregar un link a su repositorio de Github.
+- ==**Entregar un link a SU repositorio de Github**==.
 - asegurese que su repositorio sea publico.
-- asegurese de haber hecho los commits usted, revisaremos el commit log.
+- asegurese de ==cada integrante tenga commits==, revisaremos el commit log. `Esta vez no habra excepciones!`
+- **TODOS** los integrantes de su grupo deben de ser capaz de:
+    - entender
+    - explicar
+    - modificar
+    - Todo y cada linea de codigo de su proyecto.
+
+???+ fail "Integrantes"
+    Si un integrante del grupo no es capaz de explicar, entender, modificar seran penalizados como grupo
+
+
+??? info "Ya leyo todo?"
+    si leyo toda esta pagina haga click [aqui](appendix.md)

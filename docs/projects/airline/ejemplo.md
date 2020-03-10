@@ -88,3 +88,8 @@ Reservados: 3/32 [9.4%]
 Libres: 29/32 [90.6%]
 
 ```
+
+
+
+??? info "Ya leyo todo?"
+    si leyo toda esta pagina haga click [aqui](entrega.md)

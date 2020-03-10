@@ -213,3 +213,7 @@ Si quiere obtener puntos extra sera posible de la siguiente manera,
 
 <br>
 
+
+
+??? info "Ya leyo todo?"
+    si leyo toda esta pagina haga click [aqui](ejemplo.md)

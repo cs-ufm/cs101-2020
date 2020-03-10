@@ -101,3 +101,9 @@ void clearscreen()
     system("@cls||clear");
 }
 ```
+
+
+??? info "Ya leyo todo?"
+    si leyo toda esta pagina haga click [aqui](index.md)
+
+    vuelva a leer por favor, nunca esta demas leer una y otra vez
