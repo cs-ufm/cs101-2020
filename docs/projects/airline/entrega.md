@@ -2,7 +2,7 @@
 
 Para entregar su proyecto debera:
 
-- ==**Entregar un link a SU repositorio de Github**==.
+- ==**Entregar un link a SU repositorio de Github**==. `No se entrega via correo, cualquier entrega por correo sera ignorada`
 - asegurese que su repositorio sea publico.
 - asegurese de ==cada integrante tenga commits==, revisaremos el commit log. `Esta vez no habra excepciones!`
 - **TODOS** los integrantes de su grupo deben de ser capaz de:
