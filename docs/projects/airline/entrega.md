@@ -3,7 +3,7 @@
 Para entregar su proyecto debera:
 
 - puede trabajar en parejas o individual
-- ==**Entregar en MiU un link a SU repositorio de Github**==. `No se entrega via correo, cualquier entrega por correo sera ignorada`
+- ==**Entregar en [MiU](https://miu.ufm.edu/) un link a SU repositorio de Github**==. `No se entrega via correo, cualquier entrega por correo sera ignorada`
 - asegurese que su repositorio sea publico.
 - asegurese de ==cada integrante tenga commits==, revisaremos el commit log. `Esta vez no habra excepciones!`
 - **TODOS** los integrantes de su grupo deben de ser capaz de:
