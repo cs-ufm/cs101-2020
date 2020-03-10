@@ -7,6 +7,10 @@
 
 
 ---
+!!! warn "Desarrollo Local"
+    **NO USE repl.it** para el desarrollo del proyecto, debe de instalar un compilador de C en su computadora, con repl es imposible trackear su avance en un sistema de control de versiones o [conecte su cuenta de repl con github](https://dev.to/twalton83/you-can-now-run-repos-on-repl-it-9dc)
+
+
 !!! note "Clear Screen"
     en todo tiempo es mejor si hace un [clear screen](appendix/#clearscreen)
 
