@@ -2,6 +2,7 @@
 
 Para entregar su proyecto debera:
 
+- Se entrega `[Domingo 22 Marzo 23:59 2020]`
 - puede trabajar en parejas o individual
 - se entregan **TODAS** las fases del proyecto
 - ==**Entregar en [MiU](https://miu.ufm.edu/) un link a SU repositorio de Github**==. `No se entrega via correo, cualquier entrega por correo sera ignorada`
