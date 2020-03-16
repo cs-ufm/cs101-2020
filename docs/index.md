@@ -5,6 +5,15 @@ Esta sera la pagina que utilizaremos para publicar cualquier proyecto.
 !!! danger "NO FORK"
     No hagan fork a este repositorio.
 
+# Clases Virtuales
+
+Cuando ustedes entren a miU, para todos sus cursos encontraran una pestana como en el de la imagen, este boton les aparecera solamente durante el horario de la clase (esto es lo que tengo entendido).
+
+> por ejemplo en nuestra caso solamente aparecera en los horarios de Mier y Vie de 7 a 8:20 am
+
+![1](img/ufmvirtual.png)
+
+
 # [HDT](hdt/index.md)
 
 Solucion de Hojas de Trabajo vistas en clase.
