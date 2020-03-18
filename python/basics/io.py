@@ -3,6 +3,7 @@
 print("Welcome to I/O")
 
 # read from the user input, it will read STR
+# scanf("%=i", &n);
 number = input("enter a number: ")
 
 print(f'You entered {number}')
@@ -13,7 +14,8 @@ print("Yet another way to format " + str(type(number)) )
 
 
 # force to be a number by casting
-number = int(input("enter a number: "))
+number = input("enter a number: ")
+number = int(number)
 
 print(f'You entered {number}')
 

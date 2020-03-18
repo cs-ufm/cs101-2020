@@ -26,13 +26,13 @@ Para acceder a la pagina donde se publicaran las instrucciones de los proyectos 
 # Ejemplos de diferentes lenguajes
 Coleccion de ejemplos en clase.
 
-### C
+### [C]((https://github.com/cs-ufm/cs101-2020/tree/master/c))
 
 folder [c/](https://github.com/cs-ufm/cs101-2020/tree/master/c) con ejemplos unicamente de Lenguaje C.
 
-### Python
+### [Python](https://github.com/cs-ufm/cs101-2020/tree/master/python)
 
-Folder [python/](https://github.com/cs-ufm/cs101-2020/tree/master/c) con ejemplos unicamente para lenguaje Python 3.
+Folder [python/](https://github.com/cs-ufm/cs101-2020/tree/master/python) con ejemplos unicamente para lenguaje Python 3.
 
 
 ### Dudas y preguntas:
