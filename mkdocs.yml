@@ -53,6 +53,7 @@ nav:
       - 3. Mini Proyectos:
             1. Calculadora: projects/mini-proyectos/1.calc.md
             2. Piedra Papel Tijera: projects/mini-proyectos/2.ppt.md
+            3. Round int: projects/mini-proyectos/3.round.md
   - HDT:
     - "hdt/index.md"
     - "C Punteros": hdt/c.pointers.md
