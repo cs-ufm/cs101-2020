@@ -1,20 +1,40 @@
-import sys, random
+import sys, random, os
 
 
 def translate(simbolo):
-    if simbolo == "O":
+    result = 1
+    if simbolo is "O":
         #piedra
-        return 1
-    if simbolo == "_":
+        result =  1
+    elif simbolo is "_":
         # papel
-        return 2
-    if simbolo == "X":
+        result =  2
+    elif simbolo is "X":
         # tijera
-        return 3
+        result =  3
+    else:
+        print("Symbolo invalido")
+        # habria que hacer algo para devolver que algo esta mal
+        result = False
+    return result
 
 def jugar():
     opcion_computadora=random.randint(1,3)
     print("La PC eligio"+ str(opcion_computadora))
+    os.system('cls||clear')
+    jugada = input ("""
+    X = Tijera
+    _ = papel
+    O = piedra
+
+    Ingrese su jugada: """)
+    jugada_traducida=translate(jugada)
+    if jugada_traducida == False:
+        input("Presione Enter")
+        return
+    else:
+        input(f"la jugada se tradujo a: {jugada_traducida}")
+
 
 
 opcion=int(input("""
@@ -24,12 +44,12 @@ MENU
 Ingrese Opcion
 """))
 
-
-if opcion == 1:
-    jugar()
-elif opcion == 2:
-    print("Saliendo")
-    sys.exit()
-else:
-    print("Opcion invalida")
-    sys.exit()
+while(True):
+    if opcion == 1:
+        jugar()
+    elif opcion == 2:
+        print("Saliendo")
+        sys.exit()
+    else:
+        print("Opcion invalida")
+        sys.exit()
