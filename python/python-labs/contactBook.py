@@ -1,6 +1,6 @@
 ## EJERCICIO EN CLASE 15042020
 
-contacts = {}
+contacts = {'Marcos Cano':'30303030'}
 
 exit = False
 
@@ -31,7 +31,7 @@ def buscarContacto():
 
 
 def eliminarContacto():
-    input_nombre = input("Ingrese nombre del contacto que quiere buscar\n")
+    input_nombre = input("Ingrese nombre del contacto que quiere eliminar\n")
     existe = input_nombre in contacts
 
     if existe:
@@ -42,9 +42,17 @@ def eliminarContacto():
 
 
 def verContactos():
+    ## contacts = {'Victor Morales':'30303030','Marcos Cano':'123456789'}
 
-    for contact in contacts:
-        pass
+    # Primer forma
+    for x in contacts:
+        print(x + " " + contacts[x])
+
+    #Segunda Forma
+    for key,value in contacts.items():
+        print(key + " " + value)
+
+
 
 
 while not exit:
