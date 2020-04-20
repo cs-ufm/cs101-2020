@@ -1,4 +1,5 @@
 import os
+#! Only Works in MACOS
 
 
 def notify(text):
