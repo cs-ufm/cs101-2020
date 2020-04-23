@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.1">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -51,7 +51,7 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -433,8 +433,8 @@
 
 
   <li class="md-nav__item">
-    <a href="entrega/" title="4. Entrega" class="md-nav__link">
-      4. Entrega
+    <a href="appendix/" title="3. Appendix" class="md-nav__link">
+      3. Appendix
     </a>
   </li>
 
@@ -445,8 +445,8 @@
 
 
   <li class="md-nav__item">
-    <a href="appendix/" title="3. Appendix" class="md-nav__link">
-      3. Appendix
+    <a href="entrega/" title="4. Entrega" class="md-nav__link">
+      4. Entrega
     </a>
   </li>
 
@@ -481,8 +481,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../mini-proyectos/2.ppt/" title="2. Piedra Papel Tijera" class="md-nav__link">
-      2. Piedra Papel Tijera
+    <a href="../mini-proyectos/1.calc/" title="1. Calculadora" class="md-nav__link">
+      1. Calculadora
     </a>
   </li>
 
@@ -493,8 +493,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../mini-proyectos/1.calc/" title="1. Calculadora" class="md-nav__link">
-      1. Calculadora
+    <a href="../mini-proyectos/2.ppt/" title="2. Piedra Papel Tijera" class="md-nav__link">
+      2. Piedra Papel Tijera
     </a>
   </li>
 
@@ -560,6 +560,42 @@
   <li class="md-nav__item">
     <a href="../../hdt/c.pointers/" title="C Punteros" class="md-nav__link">
       C Punteros
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Parciales
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Parciales
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../parciales/parcial2.md" title="Parcial II" class="md-nav__link">
+      Parcial II
     </a>
   </li>
 
@@ -762,7 +798,7 @@
 <h2 id="fase-1-menu">Fase 1 - Menu<a class="headerlink" href="#fase-1-menu" title="Permanent link">&para;</a></h2>
 <p>Para esta fase debe desarrollar un menu de bienvenida</p>
 <ul>
-<li>La matriz se inicializara todas las casillas en <code class="codehilite"><span class="err">&#39;0&#39;</span></code>, ningun asiento reservado.</li>
+<li>La matriz se inicializara todas las casillas en <code class="codehilite">&#39;0&#39;</code>, ningun asiento reservado.</li>
 <li>Mostrara un <mark>menu</mark> con opciones para empezar a reservar.</li>
 <li>Pedira el numero de vuelo que la aerolinea estar trabajando, el formato del vuelo sera un texto de 5 caracteres,ejemplos: "AA101", "UA345", "BTZ11", no debe verificar nada de este ID excepto su longitud, este ID servira para mostrarlo en la terminal.</li>
 <li>Las opciones seran:<ol>
@@ -780,7 +816,7 @@
 <p>Si en el menu se elige la opcion "Reservar asiento" entrara a esta etapa.</p>
 <ol>
 <li>En esta fase se implementara la reserva de un asiento.</li>
-<li>Se le pedira al operador que ingrese un numero de asiento en el format <code class="codehilite"><span class="err">&quot;LetraDigito&quot;</span></code></li>
+<li>Se le pedira al operador que ingrese un numero de asiento en el format <code class="codehilite">&quot;LetraDigito&quot;</code></li>
 <li>Su programa debera "interpretar" este formato a un formato de matriz[Letra][Digito], debera hacer alguna funcion que recibiendo una Letra devuelva el numero de columna que representa en la matriz de reservaciones.</li>
 <li>Una vez se interpreta eso, su programa debe verficiar si este asiento ya fue reservado, de ser asi se le mostrara al operador que el asiento esta reservado y que debe volver a elegir otro asiento (Volver a paso 2)</li>
 <li>Si el asiento se encuentra libre debe "reservar" este asiento en su matriz de alguna manera, explicada en la nota "reservas"</li>
@@ -792,8 +828,8 @@
 <p><strong>Digito</strong>: Filas</p>
 <p><strong>Dentro de su matriz</strong>:</p>
 <ul>
-<li>Asientos reservados se representaran con <code class="codehilite"><span class="err">&#39;X&#39;</span></code><span class="critic comment">MAYUS</span>.</li>
-<li>Y asiento libre lo representara con <code class="codehilite"><span class="err">&#39;0&#39;</span></code></li>
+<li>Asientos reservados se representaran con <code class="codehilite">&#39;X&#39;</code><span class="critic comment">MAYUS</span>.</li>
+<li>Y asiento libre lo representara con <code class="codehilite">&#39;0&#39;</code></li>
 </ul>
 <p><a href="ejemplo/#reservar-asiento">Ejemplo</a></p>
 </div>
@@ -803,7 +839,7 @@
 <ol>
 <li>En esta fase se implementara la visualizacion de reservas</li>
 <li>Se mostara la matriz de una forma "grafica" en la terminal, con sus encabezados en columnas (A-F) y las filas (1-32)</li>
-<li>Mostrando los asientos reservados <code class="codehilite"><span class="err">&#39;X&#39;</span></code> y los asientos libres  <code class="codehilite"><span class="err">&#39;0&#39;</span></code></li>
+<li>Mostrando los asientos reservados <code class="codehilite">&#39;X&#39;</code> y los asientos libres  <code class="codehilite">&#39;0&#39;</code></li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">Ejemplo</p>
@@ -826,16 +862,16 @@
 <h2 id="puntos-extra">Puntos Extra<a class="headerlink" href="#puntos-extra" title="Permanent link">&para;</a></h2>
 <p>Si quiere obtener puntos extra sera posible de la siguiente manera,</p>
 <ul>
-<li>Agregara una nueva funcionalidad <code class="codehilite"><span class="err">Sugerir Asiento</span></code></li>
+<li>Agregara una nueva funcionalidad <code class="codehilite">Sugerir Asiento</code></li>
 <li>Cuando un vuelo se encuentra casi lleno sera muy dificil encontrar un asiento libre, que le parece si su programa le sugiere el asiento?</li>
 <li>Esta sugerencia debera suceder cuando en la fase de <a href="#fase-2---reservacion">reservacion</a> nos encontremos en el punto <strong>#4</strong> <span class="critic comment">mostrara al operador que el asiento esta reservado y que debe volver a elegir otro asiento (Volver a paso 2)</span></li>
 <li>Para poder sugerir un asiento que no este ocupado su programa debe 'recorrer' por toda la matriz de asientos hasta encontrar el primer asiento disponible y ese es el que va a sugerir.</li>
 </ul>
 <div class="admonition info cambio en menu">
 <p class="admonition-title">Info</p>
-<div class="codehilite"><pre><span></span><span class="n">Asiento</span> <span class="s1">&#39;A6&#39;</span> <span class="n">ya</span> <span class="n">reservado</span><span class="p">,</span> <span class="n">ingrese</span> <span class="n">un</span> <span class="n">nuevo</span> <span class="n">asiento</span>
+<div class="codehilite"><pre><span></span>Asiento &#39;A6&#39; ya reservado, ingrese un nuevo asiento
 
-<span class="n">Sugerido</span><span class="p">:</span> <span class="s1">&#39;F4&#39;</span>
+Sugerido: &#39;F4&#39;
 </pre></div>
 
 </div>
@@ -912,7 +948,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.8e03edeb.js"></script>
+      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
