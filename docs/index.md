@@ -5,6 +5,8 @@ Esta sera la pagina que utilizaremos para publicar cualquier proyecto.
 !!! danger "NO FORK"
     No hagan fork a este repositorio.
 
+:wave:
+
 # Clases Virtuales
 
 Cuando ustedes entren a miU, para todos sus cursos encontraran una pestana como en el de la imagen, este boton les aparecera solamente durante el horario de la clase (esto es lo que tengo entendido).
