@@ -22,6 +22,7 @@ Realizara el proceso de signup de una pagina de internet.
 Una vez que el usuario ingrese su contraseña debe verificar lo siguiente:
 
 - contenga un largo minimo de 8 caracteres
+- contenga un largo maximo de 20 caracteres
 - contenga como minimo una letra minuscula [a-z]
 - contenga como minimo una letra mayuscula [A-Z]
 - contenga como minimo un caracter numerico [0-9]
