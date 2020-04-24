@@ -1,5 +1,5 @@
 deploy: git
-	@mkdocs gh-deploy
+	@python3 -m mkdocs gh-deploy
 
 git:
 	@git add . || true
@@ -7,5 +7,5 @@ git:
 	@git push origin master || true
 
 serve:
-	@mkdocs serve
+	@python3 -m mkdocs serve
 s: serve

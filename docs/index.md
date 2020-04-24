@@ -5,7 +5,6 @@ Esta sera la pagina que utilizaremos para publicar cualquier proyecto.
 !!! danger "NO FORK"
     No hagan fork a este repositorio.
 
-:wave:
 
 # Clases Virtuales
 

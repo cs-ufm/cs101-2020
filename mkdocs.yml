@@ -57,3 +57,5 @@ nav:
   - HDT:
     - "hdt/index.md"
     - "C Punteros": hdt/c.pointers.md
+  - Parciales:
+    - "Parcial II": parciales/parcial2.md
