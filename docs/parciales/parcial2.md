@@ -55,6 +55,8 @@ Usara la libreria [emoji](https://pypi.org/project/emoji/) para hacer reemplazos
 Esta es una lista de los [emojis disponibles](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
 ## 2.1 Ejemplo
+
+
 ???+ info ""
     No entregue esto! esto es un ejemplo
 
