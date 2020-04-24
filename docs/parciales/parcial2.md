@@ -49,12 +49,15 @@ Usara la libreria [emoji](https://pypi.org/project/emoji/) para hacer reemplazos
 
 
 ???+ danger ""
-    ==PORFAVOR== proveame con 5 ejemplos como minimo de parrafos que utilizo, cada quien hara su propio mapping de palabras y necesito poder probar su propio programa
+    ==**PORFAVOR**== proveame con 5 ejemplos como minimo de parrafos que utilizo, cada quien hara su propio mapping de palabras y necesito poder probar su propio programa
 
 
 Esta es una lista de los [emojis disponibles](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
 ## 2.1 Ejemplo
+???+ info ""
+    No entregue esto! esto es un ejemplo
+
 
 **Diccionario** su programa tendra un diccionario obviamente con mas palabras
 ```python
