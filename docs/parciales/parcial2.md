@@ -42,10 +42,14 @@ En nuestro celular es muy facil crear un map de frases comunes a emojis, este es
 Usara la libreria [emoji](https://pypi.org/project/emoji/) para hacer reemplazos de texto => emojis en un parrafo que el usuario ingresara.
 
 
-- El usuario ingresara un parrafo (yo le proveere un parrafo de ejemplo) aleatorio, su programa debera reemplazar palabras clave por emojis.
+- El usuario ingresara un parrafo (yo le proveere un parrafo de **ejemplo**), su programa debera reemplazar palabras clave por emojis.
 - Estas palabra clave deben ser almacenadas y mapeadas usando un diccionario
 - Este diccionario de palabras debera tener por lo menos 15 palabras.
 - No debe distinguir mayusculas de minusculas
+
+
+???+ danger ""
+    ==PORFAVOR== proveame con 5 ejemplos como minimo de parrafos que utilizo, cada quien hara su propio mapping de palabras y necesito poder probar su propio programa
 
 
 Esta es una lista de los [emojis disponibles](https://www.webfx.com/tools/emoji-cheat-sheet/)
