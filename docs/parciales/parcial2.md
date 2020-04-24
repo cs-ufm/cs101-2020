@@ -1,4 +1,4 @@
-## Parcial II - practica (60 pts)
+## Parcial II - practica Python (60 pts)
 
 
 Para esta parte del parcial podra usar cualquier recurso en linea ==EXCEPTO COMUNICACION entre ustedes==.
