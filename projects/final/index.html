@@ -1,0 +1,1243 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+    
+    
+      
+        <title>1. Contact Manager - Computer Science 101</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="deep-blue" data-md-color-accent="red">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#proyecto-final" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Computer Science 101" class="md-header-nav__button md-logo">
+          
+            <img src="../../img/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Computer Science 101
+            </span>
+            <span class="md-header-nav__topic">
+              
+                1. Contact Manager
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/cs-ufm/cs101-2020/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Computer Science 101" class="md-nav__button md-logo">
+      
+        <img src="../../img/logo.png" width="48" height="48">
+      
+    </a>
+    Computer Science 101
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/cs-ufm/cs101-2020/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Projects
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../projects/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      1. Hangman
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        1. Hangman
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hangman/" title="1. Instrucciones" class="md-nav__link">
+      1. Instrucciones
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hangman/para_entregar/" title="2. Forma de Entrega" class="md-nav__link">
+      2. Forma de Entrega
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      2. Airline Ticket Reservation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        2. Airline Ticket Reservation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../airline/" title="1. Instrucciones" class="md-nav__link">
+      1. Instrucciones
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../airline/ejemplo/" title="2. Ejemplo" class="md-nav__link">
+      2. Ejemplo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../airline/appendix/" title="3. Appendix" class="md-nav__link">
+      3. Appendix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../airline/entrega/" title="4. Entrega" class="md-nav__link">
+      4. Entrega
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      3. Mini Proyectos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        3. Mini Proyectos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mini-proyectos/1.calc/" title="1. Calculadora" class="md-nav__link">
+      1. Calculadora
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mini-proyectos/2.ppt/" title="2. Piedra Papel Tijera" class="md-nav__link">
+      2. Piedra Papel Tijera
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mini-proyectos/3.round/" title="3. Round int" class="md-nav__link">
+      3. Round int
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" checked>
+    
+    <label class="md-nav__link" for="nav-2-5">
+      4. Final
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        4. Final
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        1. Contact Manager
+      </label>
+    
+    <a href="./" title="1. Contact Manager" class="md-nav__link md-nav__link--active">
+      1. Contact Manager
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contactomanager" class="md-nav__link">
+    ContactoManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-un-contacto" class="md-nav__link">
+    Estructura de un Contacto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inicializacion-de-contactos" class="md-nav__link">
+    Inicializacion de contactos.
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    ejemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manejo-de-contactos" class="md-nav__link">
+    Manejo de Contactos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agregar-contactos" class="md-nav__link">
+    Agregar Contactos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-contactos" class="md-nav__link">
+    Buscar contactos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-y-ver-contactos" class="md-nav__link">
+    Listar y Ver contactos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrar-contacto" class="md-nav__link">
+    Borrar Contacto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llamar-contacto" class="md-nav__link">
+    Llamar Contacto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-msg" class="md-nav__link">
+    Enviar Msg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-correo" class="md-nav__link">
+    Enviar Correo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportar-contactos" class="md-nav__link">
+    Exportar Contactos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="extra/" title="2. Extras" class="md-nav__link">
+      2. Extras
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="entrega/" title="3. Entrega" class="md-nav__link">
+      3. Entrega
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      HDT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        HDT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hdt/" title="HDT" class="md-nav__link">
+      HDT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hdt/c.pointers/" title="C Punteros" class="md-nav__link">
+      C Punteros
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Parciales
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Parciales
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../parciales/parcial2/" title="Parcial II" class="md-nav__link">
+      Parcial II
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contactomanager" class="md-nav__link">
+    ContactoManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-un-contacto" class="md-nav__link">
+    Estructura de un Contacto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inicializacion-de-contactos" class="md-nav__link">
+    Inicializacion de contactos.
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    ejemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manejo-de-contactos" class="md-nav__link">
+    Manejo de Contactos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agregar-contactos" class="md-nav__link">
+    Agregar Contactos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-contactos" class="md-nav__link">
+    Buscar contactos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-y-ver-contactos" class="md-nav__link">
+    Listar y Ver contactos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrar-contacto" class="md-nav__link">
+    Borrar Contacto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llamar-contacto" class="md-nav__link">
+    Llamar Contacto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-msg" class="md-nav__link">
+    Enviar Msg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enviar-correo" class="md-nav__link">
+    Enviar Correo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportar-contactos" class="md-nav__link">
+    Exportar Contactos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/cs-ufm/cs101-2020/edit/master/docs/projects/final/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="proyecto-final">Proyecto Final<a class="headerlink" href="#proyecto-final" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Este es el proyecto final.</li>
+<li>se trabajara de manera grupal</li>
+</ul>
+<p>Usted desarrollara un ContactoBook que consistira en:
+- el backend
+- la interfaz de usuario *</p>
+<h2 id="contactomanager">ContactoManager<a class="headerlink" href="#contactomanager" title="Permanent link">&para;</a></h2>
+<p>Este ContactoManager sera de una manera mas avanzada al como ya lo habiamos venido trabajando, sin embargo puede utilizar el que ya vimos en clase como guia.</p>
+<h2 id="estructura-de-un-contacto">Estructura de un Contacto<a class="headerlink" href="#estructura-de-un-contacto" title="Permanent link">&para;</a></h2>
+<p>Algunos campos describiran a un Contacto:</p>
+<p><strong>Key</strong>: "Nombre y Apellido"</p>
+<table>
+<thead>
+<tr>
+<th>telefono</th>
+<th align="center">correo</th>
+<th align="right">empresa</th>
+<th align="right">extra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>numero de telefono, casa o celular</td>
+<td align="center">correo electronico</td>
+<td align="right">Compania en la que trabaja el contacto</td>
+<td align="right">informacion  extra que desee agregar del contacto</td>
+</tr>
+</tbody>
+</table>
+<h2 id="inicializacion-de-contactos">Inicializacion de contactos.<a class="headerlink" href="#inicializacion-de-contactos" title="Permanent link">&para;</a></h2>
+<p>Todos los grupos partiran de un libro de contactos base que se le dara en una URL.</p>
+<ol>
+<li>Su grupo debera "descargar" este archivo en formato <a href="https://www.w3schools.com/whatis/whatis_json.asp">JSON</a>.</li>
+<li>Creara su Contactobook base a partir de este archivo.</li>
+</ol>
+<details class="info" open="open"><summary>NOTA</summary><p>este archivo en este momento sera un archivo ficticio con el cual usted podra hacer pruebas
+pero el dia de la entrega y demostracion esta URL sera una nueva URL</p>
+</details>
+<h3 id="ejemplo">ejemplo<a class="headerlink" href="#ejemplo" title="Permanent link">&para;</a></h3>
+<p>URL: <a href="http://demo7130536.mockable.io/contacts">http://demo7130536.mockable.io/contacts</a></p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;A&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;Antoine Dufour&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;telefono&quot;</span><span class="p">:</span> <span class="s2">&quot;55554444&quot;</span><span class="p">,</span> <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;ad@gmail.com&quot;</span> <span class="p">,</span> <span class="nt">&quot;company&quot;</span> <span class="p">:</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span> <span class="nt">&quot;extra&quot;</span> <span class="p">:</span> <span class="s2">&quot;Met him in Paris airport&quot;</span> <span class="p">},</span>
+        <span class="nt">&quot;Amelia Lavaca&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;telefono&quot;</span><span class="p">:</span> <span class="s2">&quot;11112222&quot;</span><span class="p">,</span> <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;al@outlook.com&quot;</span> <span class="p">,</span> <span class="nt">&quot;company&quot;</span> <span class="p">:</span> <span class="s2">&quot;BAM&quot;</span><span class="p">,</span> <span class="nt">&quot;extra&quot;</span> <span class="p">:</span> <span class="s2">&quot;Sister &quot;</span> <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;D&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;Didier Deschamps&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;telefono&quot;</span><span class="p">:</span> <span class="s2">&quot;22223333&quot;</span><span class="p">,</span> <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;ad@gmail.com&quot;</span> <span class="p">,</span> <span class="nt">&quot;company&quot;</span> <span class="p">:</span> <span class="s2">&quot;DHL&quot;</span><span class="p">,</span> <span class="nt">&quot;extra&quot;</span> <span class="p">:</span> <span class="s2">&quot;Famous TD&quot;</span> <span class="p">}</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
+
+<h2 id="manejo-de-contactos">Manejo de Contactos<a class="headerlink" href="#manejo-de-contactos" title="Permanent link">&para;</a></h2>
+<p>En el menu se podra:</p>
+<ul>
+<li>Agregar contactos</li>
+<li>Buscar contactos</li>
+<li>Listar contactos</li>
+<li>Borrar contactos</li>
+<li>Llamar contactos</li>
+<li>Enviar mensaje a contactos</li>
+<li>Enviar correo a contacto.</li>
+<li>Exportar Contactos.</li>
+</ul>
+<h3 id="agregar-contactos">Agregar Contactos<a class="headerlink" href="#agregar-contactos" title="Permanent link">&para;</a></h3>
+<p>Usted podra agegar nuevos contactos de la misma manera como lo visto en clase, con la diferencia que ahora agrupara cada Contacto dentro de la letra con la que inicia como se muestra en el <a href="ejemplo/">Ejemplo</a></p>
+<p>Cada vez que se añada un nuevo contacto debe tomar la primera letra con la que inicia el nombre y lo agregara a la letra que pertenece.</p>
+<p>Para cada uno de los campos debe pedirlo:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Ingrese el contacto</span>
+
+<span class="l l-Scalar l-Scalar-Plain">nombre</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">.....</span>
+<span class="nt">telefono</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">....</span>
+<span class="nt">correo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">....</span>
+<span class="nt">empresa</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">....</span>
+<span class="nt">extra</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">....</span>
+
+<span class="l l-Scalar l-Scalar-Plain">verificando ....</span>
+</pre></div>
+
+<p>Para los campos debe verificar las siguientes cosas:</p>
+<ul>
+<li>El nombre debe tener 2 palabras "Nombre y Apellido"</li>
+<li>el telefono debe tener solo numeros (pero en string).</li>
+<li>Verificar que el correo sea valido usando validators.</li>
+<li>Empresa es opcional</li>
+<li>extra es opcional</li>
+</ul>
+<p>Si no "pasa" alguna verificacion debera mostrar cual verificacion fallo y volver a pedir el contacto. (como puntos extra podria ingeniar que solo regrese a pedir lo que fallo la verificacion)</p>
+<h3 id="buscar-contactos">Buscar contactos<a class="headerlink" href="#buscar-contactos" title="Permanent link">&para;</a></h3>
+<p>Debera buscar contactos por nombre o apellido, es decir por llave. El resultado sera una lista de contactos encontrados.</p>
+<div class="codehilite"><pre><span></span><span class="nt">buscar</span><span class="p">:</span> <span class="s">&quot;Ant&quot;</span>
+
+<span class="nt">Resultados</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Antoine Dufour</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Antonio Diaz</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Luis  Antonio Perez</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Carlos Antillan</span>
+</pre></div>
+
+<h3 id="listar-y-ver-contactos">Listar y Ver contactos<a class="headerlink" href="#listar-y-ver-contactos" title="Permanent link">&para;</a></h3>
+<p>Debera mostrar los contactos de la siguiente forma.</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Listar Contacto</span>
+
+<span class="l l-Scalar l-Scalar-Plain">A</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">1. Antoine Dufour</span>
+    <span class="l l-Scalar l-Scalar-Plain">2. Antonio Diaz</span>
+    <span class="l l-Scalar l-Scalar-Plain">3. Antonieta Vela</span>
+
+<span class="nt">B</span><span class="p">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">4. Boris Corzo</span>
+    <span class="l l-Scalar l-Scalar-Plain">5. Brenda Gomez</span>
+
+<span class="nt">C</span><span class="p">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">6. Carlos Lopez</span>
+    <span class="l l-Scalar l-Scalar-Plain">7. Carla Barrios</span>
+
+<span class="nt">E</span><span class="p">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">8. Ester Lopez</span>
+    <span class="l l-Scalar l-Scalar-Plain">9. Esdras Rivas</span>
+
+<span class="nt">T</span><span class="p">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">10. Tomas Barrios</span>
+
+<span class="nt">Z</span><span class="p">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">11. Zoila Cepeda</span>
+
+<span class="l l-Scalar l-Scalar-Plain">-----------------------</span>
+<span class="nt">Ver Contacto</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">8</span> <span class="c1"># &lt;-- vea como se usa un No.</span>
+
+<span class="nt">Ester Lopez</span><span class="p">:</span>
+    <span class="nt">telefono</span><span class="p">:</span> <span class="s">&quot;55554444&quot;</span>
+    <span class="nt">email</span><span class="p">:</span> <span class="s">&quot;elopez@gmail.com&quot;</span>
+    <span class="nt">company</span><span class="p">:</span> <span class="s">&quot;Google&quot;</span>
+    <span class="nt">extra</span><span class="p">:</span> <span class="s">&quot;Friend&quot;</span>
+</pre></div>
+
+<details class="info" open="open"><summary>Listar e interactuar</summary><p>De ahora en adelante para cada opcion de menu para interactuar lo podra hacer de alguna de estas dos formas:</p>
+<ul>
+<li>Listar Contacto e interactuar con No.</li>
+<li>Listar y proveer el nombre exacto para interactuar.</li>
+</ul>
+</details>
+<h3 id="borrar-contacto">Borrar Contacto<a class="headerlink" href="#borrar-contacto" title="Permanent link">&para;</a></h3>
+<p>Para borrar contacto lo puede hacer de dos maneras:</p>
+<ul>
+<li>Listar Contacto y Borrar con No.</li>
+<li>Listar y proveer el nombre exacto</li>
+</ul>
+<p>Al borrar el contacto debera mostrar:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Contacto &quot;Ester Lopez&quot; Borrado</span>
+</pre></div>
+
+<details class="info" open="open"><summary>Tiempo de msg</summary><p>el mensaje sera de 3 segundos (podra ser configurable), es decir se mostrara el mensaje durante 3 segs y se quitara el mensaje, regresando al menu principal</p>
+</details>
+<h3 id="llamar-contacto">Llamar Contacto<a class="headerlink" href="#llamar-contacto" title="Permanent link">&para;</a></h3>
+<p>Para Llamar contacto lo puede hacer de dos maneras:</p>
+<ul>
+<li>Listar Contacto y Llamar con No.</li>
+<li>Listar y proveer el nombre exacto</li>
+</ul>
+<p>Para llamar contacto solo debera mostrar</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">Lamando a &quot;Ester Lopez&quot; al 55554444 ....</span>
+</pre></div>
+
+<details class="info" open="open"><summary>Tiempo de msg</summary><p>el mensaje sera de 3 segundos (podra ser configurable), es decir se mostrara el mensaje durante 3 segs y se quitara el mensaje, regresando al menu principal</p>
+</details>
+<h3 id="enviar-msg">Enviar Msg<a class="headerlink" href="#enviar-msg" title="Permanent link">&para;</a></h3>
+<p>Para enviar msg a contacto lo puede hacer de dos maneras:</p>
+<ul>
+<li>Listar Contacto y enviar msg a con No.</li>
+<li>Listar y proveer el nombre exacto</li>
+</ul>
+<p>Para enviar msg a contacto solo debera pedir el contacto y luego pedira el mensaje que desea enviar</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">----------</span>
+<span class="l l-Scalar l-Scalar-Plain">Contacto?</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">8</span>
+<span class="s">&quot;Ester</span><span class="nv"> </span><span class="s">Lopez&quot;</span>
+
+<span class="nt">Mensaje</span><span class="p">:</span> <span class="s">&quot;queria</span><span class="nv"> </span><span class="s">preguntarte</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">que</span><span class="nv"> </span><span class="s">hora</span><span class="nv"> </span><span class="s">vendras?&quot;</span>
+
+<span class="l l-Scalar l-Scalar-Plain">Hola &quot;Ester Lopez&quot;  55554444</span>
+    <span class="l l-Scalar l-Scalar-Plain">&gt; queria preguntarte a que hora vendras?</span>
+</pre></div>
+
+<h3 id="enviar-correo">Enviar Correo<a class="headerlink" href="#enviar-correo" title="Permanent link">&para;</a></h3>
+<p>Para enviar Correo a contacto lo puede hacer de dos maneras:</p>
+<ul>
+<li>Listar Contacto y enviar Correo a con No.</li>
+<li>Listar y proveer el nombre exacto</li>
+</ul>
+<p>Para enviar Correo a contacto solo debera pedir el contacto y luego pedira el mensaje que desea enviar</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">----------</span>
+<span class="l l-Scalar l-Scalar-Plain">Contacto?</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">8</span>
+<span class="s">&quot;Ester</span><span class="nv"> </span><span class="s">Lopez&quot;</span>
+
+<span class="nt">Subject</span><span class="p">:</span> <span class="s">&quot;Clase</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">hoy&quot;</span>
+<span class="nt">Mensaje</span><span class="p">:</span> <span class="s">&quot;queria</span><span class="nv"> </span><span class="s">preguntarte</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">que</span><span class="nv"> </span><span class="s">hora</span><span class="nv"> </span><span class="s">vendras?&quot;</span>
+
+<span class="l l-Scalar l-Scalar-Plain">Enviando correo a  &quot;Ester Lopez&quot; elopez@gmail.com</span>
+    <span class="l l-Scalar l-Scalar-Plain">&gt; Subject</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Clase de hoy</span>
+    <span class="l l-Scalar l-Scalar-Plain">&gt; Message</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">queria preguntarte a que hora vendras?</span>
+</pre></div>
+
+<h3 id="exportar-contactos">Exportar Contactos<a class="headerlink" href="#exportar-contactos" title="Permanent link">&para;</a></h3>
+<p>Para exportar contactos debera exportar a un archivo <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> en el mismo directorio, a un archivo <code class="codehilite">contact_manager.csv</code></p>
+<p>La estructura del csv sera plana de la siguiente manera</p>
+<table>
+<thead>
+<tr>
+<th>Contactonombre</th>
+<th align="center">telefono</th>
+<th align="right">correo</th>
+<th align="right">empresa</th>
+<th align="right">extra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Antoine Dufour</td>
+<td align="center">54541111</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#100;&#64;&#117;&#102;&#109;&#46;&#101;&#100;&#117;">&#97;&#100;&#64;&#117;&#102;&#109;&#46;&#101;&#100;&#117;</a></td>
+<td align="right">ufm</td>
+<td align="right">catedratico de la facultad</td>
+</tr>
+<tr>
+<td>Antonio Diaz</td>
+<td align="center">22220000</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#105;&#97;&#122;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">&#100;&#105;&#97;&#122;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;</a></td>
+<td align="right">BI</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Antonieta Vela</td>
+<td align="center">33330000</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#118;&#101;&#108;&#97;&#64;&#102;&#101;&#100;&#101;&#120;&#46;&#99;&#111;&#109;">&#97;&#118;&#101;&#108;&#97;&#64;&#102;&#101;&#100;&#101;&#120;&#46;&#99;&#111;&#109;</a></td>
+<td align="right">BAM</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Boris Corzo</td>
+<td align="center">54321111</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#114;&#122;&#111;&#64;&#99;&#111;&#114;&#122;&#111;&#46;&#99;&#111;&#109;">&#99;&#111;&#114;&#122;&#111;&#64;&#99;&#111;&#114;&#122;&#111;&#46;&#99;&#111;&#109;</a></td>
+<td align="right">Cementos progreso</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Brenda Gomez</td>
+<td align="center">44440000</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#103;&#111;&#109;&#101;&#122;&#64;&#117;&#46;&#110;&#101;&#116;">&#98;&#103;&#111;&#109;&#101;&#122;&#64;&#117;&#46;&#110;&#101;&#116;</a></td>
+<td align="right"></td>
+<td align="right">no recuerdo</td>
+</tr>
+<tr>
+<td>Carlos Lopez</td>
+<td align="center">44432222</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#108;&#99;&#97;&#114;&#108;&#111;&#115;&#64;&#104;&#105;&#46;&#99;&#111;&#109;">&#101;&#108;&#99;&#97;&#114;&#108;&#111;&#115;&#64;&#104;&#105;&#46;&#99;&#111;&#109;</a></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Carla Barrios</td>
+<td align="center">55234444</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#98;&#97;&#114;&#114;&#105;&#111;&#115;&#64;&#99;&#111;&#114;&#114;&#101;&#111;&#46;&#105;&#110;&#102;&#111;">&#99;&#98;&#97;&#114;&#114;&#105;&#111;&#115;&#64;&#99;&#111;&#114;&#114;&#101;&#111;&#46;&#105;&#110;&#102;&#111;</a></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Ester Lopez</td>
+<td align="center">32111111</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#108;&#111;&#112;&#101;&#122;&#64;&#98;&#105;&#46;&#99;&#111;&#109;&#46;&#103;&#116;">&#101;&#108;&#111;&#112;&#101;&#122;&#64;&#98;&#105;&#46;&#99;&#111;&#109;&#46;&#103;&#116;</a></td>
+<td align="right">Banco Industrial</td>
+<td align="right">agente de cobros</td>
+</tr>
+<tr>
+<td>Esdras Rivas</td>
+<td align="center">55341111</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#105;&#118;&#97;&#115;&#64;&#114;&#105;&#46;&#99;&#111;&#109;">&#114;&#105;&#118;&#97;&#115;&#64;&#114;&#105;&#46;&#99;&#111;&#109;</a></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Tomas Barrios</td>
+<td align="center">56783456</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#64;&#117;&#102;&#109;&#46;&#101;&#100;&#117;">&#116;&#64;&#117;&#102;&#109;&#46;&#101;&#100;&#117;</a></td>
+<td align="right">ufm</td>
+<td align="right">decano</td>
+</tr>
+<tr>
+<td>Zoila Cepeda</td>
+<td align="center">44321111</td>
+<td align="right"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#122;&#111;&#105;&#108;&#97;&#64;&#117;&#102;&#109;&#46;&#101;&#100;&#117;">&#122;&#111;&#105;&#108;&#97;&#64;&#117;&#102;&#109;&#46;&#101;&#100;&#117;</a></td>
+<td align="right">UFM</td>
+<td align="right">secretaria</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../mini-proyectos/3.round/" title="3. Round int" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                3. Round int
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="extra/" title="2. Extras" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                2. Extras
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
