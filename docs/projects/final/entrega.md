@@ -2,6 +2,7 @@
 
 Para entregar su proyecto debera:
 
+- deben etregar un ==video== (en Youtube) donde los integrantes del grupo expliquen cada detalle del proyecto no menos de 10 minutos y no mas de 20 minutos, pueden utilizar algo como streamyard.com
 - Se entrega `[Domingo 17 Mayo 23:59 2020]`
 - puede trabajar en parejas o individual
 - se entregan **TODAS** las fases del proyecto
