@@ -29,7 +29,7 @@ Algunos campos describiran a un Contacto:
 
 Todos los grupos partiran de un libro de contactos base que se le dara en una URL.
 
-1. Su grupo debera "descargar" este archivo en formato [JSON](https://www.w3schools.com/whatis/whatis_json.asp).
+1. El programa debera "descargar" este archivo en formato [JSON](https://www.w3schools.com/whatis/whatis_json.asp).
 2. Creara su Contactobook base a partir de este archivo.
 
 ???+ info "NOTA"
