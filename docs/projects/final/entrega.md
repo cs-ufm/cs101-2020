@@ -6,7 +6,7 @@ Para entregar su proyecto debera:
 - Se entrega `[Domingo 17 Mayo 23:59 2020]`
 - puede trabajar en parejas o individual
 - se entregan **TODAS** las fases del proyecto
-- ==**Entregar en [MiU](https://miu.ufm.edu/) un link a SU repositorio de Github**==. `No se entrega via correo, cualquier entrega por correo sera ignorada`
+- ==**Entregar en [MiU](https://miu.ufm.edu/) un archivo con los integrantes, links a su repositorio de Github y Video**==. `No se entrega via correo, cualquier entrega por correo sera ignorada`
 - asegurese que su repositorio sea publico.
 - asegurese de ==cada integrante tenga commits==, revisaremos el commit log. `Esta vez no habra excepciones!`
 - **TODOS** los integrantes de su grupo deben de ser capaz de:
