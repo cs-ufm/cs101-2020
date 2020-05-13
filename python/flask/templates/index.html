@@ -1,0 +1,16 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<h1> Lista de bebidas Favoritas</h1>
+{% for persona,bebidas in bebidas_persona.items() %}
+            <h2> {{persona}}
+                <ol>
+                    {% for bebida in bebidas %}
+                    <li>
+                        {{bebida}}
+                    </li>
+                    {% endfor %}
+                </ol>
+
+            </h2>
+
+{% endfor %}
