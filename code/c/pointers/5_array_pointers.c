@@ -5,6 +5,9 @@ void arrays_are_pointers(){
     printf("\nArray names are pointers\n\n");
     char arr[3] = { 'A','B','C'};
 
+   
+    printf("%p %c", &arr, *arr);
+
     printf("Address of arr[0]: \n&arr[0] %p \n\n",&arr[0]);
     printf("Value of arr[0]:\n *(&arr[0]) %c or arr[0] %c \n", *(&arr[0]), arr[0]);
 }
