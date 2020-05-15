@@ -36,7 +36,7 @@ Todos los grupos partiran de un libro de contactos base que se le dara en una UR
     este archivo en este momento sera un archivo ficticio con el cual usted podra hacer pruebas
     pero el dia de la entrega y demostracion esta URL sera una nueva URL
 
-### URL FINAL - para entregar proyect
+### URL FINAL - para entregar proyecto
 
 URL FINAL: http://demo7130536.mockable.io/final-contact-book
 
