@@ -59,8 +59,8 @@ URL: http://demo7130536.mockable.io/contacts
 
 ```
 
-???+ note "[] over {}"
-    es mejor si dentro de cada letra es una lista de "contactos", vean como hay [ ] en lugar de { } 
+<!-- ???+ note "[] over {}"
+    es mejor si dentro de cada letra es una lista de "contactos", vean como hay [ ] en lugar de { }  -->
 
 ## Manejo de Contactos
 
