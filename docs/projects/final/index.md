@@ -60,7 +60,7 @@ URL FINAL: http://demo7130536.mockable.io/final-contact-book
 
 ```
 
-??? note "[] over {}"
+???+ note "[] over {}"
     es mejor si dentro de cada letra es una lista de "contactos", vean como hay [ ] en lugar de { } 
 
 ## Manejo de Contactos
