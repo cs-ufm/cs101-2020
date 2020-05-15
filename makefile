@@ -2,6 +2,7 @@ deploy: git
 	@python3 -m mkdocs gh-deploy
 
 git:
+	@git pull
 	@git add . || true
 	@git commit -m "auto deploy" || true
 	@git push origin master || true
