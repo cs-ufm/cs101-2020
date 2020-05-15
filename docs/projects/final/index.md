@@ -39,20 +39,24 @@ Todos los grupos partiran de un libro de contactos base que se le dara en una UR
 ### ejemplo
 URL: http://demo7130536.mockable.io/contacts
 
+URL FINAL: http://demo7130536.mockable.io/final-contact-book
+
 ```json
 {
-    "A": {
+    "A": [
         "Antoine Dufour": { "telefono": "55554444", "email": "ad@gmail.com" , "company" : "Google", "extra" : "Met him in Paris airport" },
         "Amelia Lavaca": { "telefono": "11112222", "email": "al@outlook.com" , "company" : "BAM", "extra" : "Sister " }
-    },
-    "D": {
+    ],
+    "D": [
         "Didier Deschamps": { "telefono": "22223333", "email": "ad@gmail.com" , "company" : "DHL", "extra" : "Famous TD" }
-    }
+    ]
 
 }
 
 ```
 
+??? note "[] over {}"
+    es mejor si dentro de cada letra es una lista de "contactos", vean como hay [ ] en lugar de { } 
 
 ## Manejo de Contactos
 
